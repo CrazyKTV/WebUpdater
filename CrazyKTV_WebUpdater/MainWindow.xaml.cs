@@ -24,6 +24,11 @@ namespace CrazyKTV_WebUpdater
             {
                 if (File.Exists(Global.WebUpdaterMDFile))
                 {
+                    if (!File.Exists(Global.WebUpdaterCSSFile))
+                    {
+                        DownloadFile(Global.WebUpdaterCSSFile, Global.WebUpdaterCSS, false);
+                    }
+
                     using (var reader = new StreamReader(Global.WebUpdaterMDFile))
                     using (var writer = new StreamWriter(Global.WebUpdaterHtmlFile))
                     {
