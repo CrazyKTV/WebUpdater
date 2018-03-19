@@ -189,6 +189,13 @@ namespace CrazyKTV_WebUpdater
                 {
                     Process p = Process.Start(file, UnFolderFileArguments);
                     p.WaitForExit();
+                }
+            }
+
+            foreach (string file in FolderFileList)
+            {
+                if (File.Exists(file))
+                {
                     File.Delete(file);
                 }
             }
