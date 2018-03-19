@@ -21,11 +21,11 @@
 
 ## 20180320 更新記錄 (暫)
 
-加歌程式更新至 1.4.6.17 版。
+加歌程式更新至 1.4.7 版。
 
-CrazyKTV 加歌程式 v1.4.6.1 ~ v1.4.6.17 更新內容:
+CrazyKTV 加歌程式 v1.4.7 更新內容:
 
-[https://github.com/CrazyKTV/SongMgr/releases/tag/v1.4.6](https://github.com/CrazyKTV/SongMgr/releases/tag/v1.4.6)
+[https://github.com/CrazyKTV/SongMgr/releases/tag/v1.4.7](https://github.com/CrazyKTV/SongMgr/releases/tag/v1.4.7)
 
 ```
 
