@@ -1,27 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Windows.Forms;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace CrazyKTV_WebUpdater
 {
-    public static class ControlExtentions
-    {
-        public static void MakeDoubleBuffered(this Control control, bool setting)
-        {
-            Type controlType = control.GetType();
-            PropertyInfo pi = controlType.GetProperty("DoubleBuffered",
-            BindingFlags.Instance | BindingFlags.NonPublic);
-            pi.SetValue(control, setting, null);
-        }
-
-    }
-
     class CommonFunc
     {
         public static void CreateVersionXmlFile(string VersionFile)
@@ -96,7 +84,7 @@ namespace CrazyKTV_WebUpdater
             {
                 XElement rootElement = XElement.Load(VersionFile);
 
-                foreach(XElement childNode in rootElement.Elements("File"))
+                foreach (XElement childNode in rootElement.Elements("File"))
                 {
                     List<string> list = new List<string>();
                     list.Add(childNode.Attribute("Name").Value);
@@ -110,9 +98,32 @@ namespace CrazyKTV_WebUpdater
             catch
             {
                 MessageBox.Show("【" + Path.GetFileName(VersionFile) + "】設定檔內容有錯誤,請刪除後再執行。");
-                Application.Exit();
+                Application.Current.Shutdown();
             }
             return VerValueListList;
+        }
+
+        public static void UpdateProgressBar(ProgressBar pbar, string uitem, int value)
+        {
+            switch (uitem)
+            {
+                case "Maximum":
+                    pbar.Maximum = value;
+                    break;
+                case "Value":
+                    pbar.Value = value;
+                    break;
+            }
+        }
+
+        public static void UpdateLabel(Label lbl, string uitem, string value)
+        {
+            switch (uitem)
+            {
+                case "Content":
+                    lbl.Content = value;
+                    break;
+            }
         }
 
     }

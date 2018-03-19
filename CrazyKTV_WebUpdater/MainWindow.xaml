@@ -1,0 +1,21 @@
+﻿<Window x:Class="CrazyKTV_WebUpdater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrazyKTV_WebUpdater"
+        mc:Ignorable="d"
+        Title="CrazyKTV 更新程式 v1.0.3" Height="714" Width="1005" Loaded="Window_Loaded">
+    <Grid>
+
+        <Viewbox Stretch="Fill">
+            <Grid x:Name="MainGrid" Width="1005" Height="714">
+                <WebBrowser x:Name="WebBrowser1" HorizontalAlignment="Left" Height="592" Margin="10,0,0,0" VerticalAlignment="Top" Width="985"/>
+                <ProgressBar x:Name="progressBar1" HorizontalAlignment="Left" Height="24" Margin="10,608,0,0" VerticalAlignment="Top" Width="985"/>
+                <ProgressBar x:Name="progressBar2" HorizontalAlignment="Left" Height="24" Margin="10,637,0,0" VerticalAlignment="Top" Width="985"/>
+                <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="10,672,0,0" VerticalAlignment="Top" Width="985" FontSize="18" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}"/>
+            </Grid>
+        </Viewbox>
+
+    </Grid>
+</Window>

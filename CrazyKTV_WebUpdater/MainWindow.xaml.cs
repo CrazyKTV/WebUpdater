@@ -2,20 +2,50 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Net;
+using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace CrazyKTV_WebUpdater
 {
-    public partial class MainForm : Form
+    /// <summary>
+    /// MainWindow.xaml 的互動邏輯
+    /// </summary>
+    public partial class MainWindow : Window
     {
-        public MainForm()
+        public MainWindow()
         {
             InitializeComponent();
+
+            bool DownloadStatus = DownloadFile(Global.WebUpdaterMDFile, Global.WebUpdaterLogUrl, false);
+            if (DownloadStatus)
+            {
+                if (File.Exists(Global.WebUpdaterMDFile))
+                {
+                    using (var reader = new StreamReader(Global.WebUpdaterMDFile))
+                    using (var writer = new StreamWriter(Global.WebUpdaterHtmlFile))
+                    {
+                        CommonMark.CommonMarkConverter.Convert(reader, writer);
+                    }
+                    string curDir = Directory.GetCurrentDirectory();
+                    WebBrowser1.Source = new Uri(string.Format("file:///{0}/CrazyKTV_WebUpdater.html", curDir));
+                }
+            }
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             bool RebuildFile = false;
             if (!File.Exists(Global.WebUpdaterFile))
@@ -42,26 +72,26 @@ namespace CrazyKTV_WebUpdater
                         }
                         else
                         {
-                            if (MessageBox.Show("你確定要更新檔案嗎?", "偵測到 CrazyKTV 版本更新", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                            if (MessageBox.Show("你確定要更新檔案嗎?", "偵測到 CrazyKTV 版本更新", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                             {
                                 Task.Factory.StartNew(() => UpdateFileTask());
                             }
                             else
                             {
-                                label1.Text = "你的 CrazyKTV 還未更新至最新版本。";
+                                label1.Content = "你的 CrazyKTV 還未更新至最新版本。";
                             }
                         }
                     }
                     else
                     {
-                        label1.Text = "你的 CrazyKTV 已是最新版本。";
+                        label1.Content = "你的 CrazyKTV 已是最新版本。";
                     }
                 }
             }
             else
             {
                 File.Delete(Global.WebUpdaterTempFile);
-                label1.Text = "暫時無法取得網路上的更新資料,請稍後再試。";
+                label1.Content = "暫時無法取得網路上的更新資料,請稍後再試。";
             }
         }
 
@@ -69,10 +99,7 @@ namespace CrazyKTV_WebUpdater
         {
             string UnFolderFileArguments = "-y";
 
-            this.BeginInvoke((Action)delegate()
-            {
-                progressBar2.Maximum = Global.RemoteVerList.Count;
-            });
+            Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar2, "Maximum", Global.RemoteVerList.Count);
 
             List<string> LocaleNameList = new List<string>();
             foreach (List<string> list in Global.LocaleVerList)
@@ -82,11 +109,8 @@ namespace CrazyKTV_WebUpdater
 
             foreach (List<string> list in Global.RemoteVerList)
             {
-                this.BeginInvoke((Action)delegate()
-                {
-                    label1.Text = "正在檢查更新檔案,請稍待...";
-                    progressBar2.Value = Global.RemoteVerList.IndexOf(list) + 1;
-                });
+                Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在檢查更新檔案,請稍待...");
+                Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar2, "Value", Global.RemoteVerList.IndexOf(list) + 1);
 
                 int LocaleListIndex = LocaleNameList.IndexOf(list[0]);
 
@@ -94,14 +118,12 @@ namespace CrazyKTV_WebUpdater
                 {
                     if (Convert.ToInt64(list[1]) > Convert.ToInt64(Global.LocaleVerList[LocaleListIndex][1]))
                     {
-                        this.BeginInvoke((Action)delegate ()
-                        {
-                            label1.Text = "正在下載 " + list[0] + " 更新檔案...";
-                        });
+                        Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在下載 " + list[0] + " 更新檔案...");
+
                         CommonFunc.SaveVersionXmlFile(Global.WebUpdaterFile, list[0], list[1], list[2], list[3], list[4]);
                         if (list[0] != "VersionInfo")
                         {
-                            if (list[0] == "CrazySong.mdb" && File.Exists(Application.StartupPath + @"\CrazySong.mdb"))
+                            if (list[0] == "CrazySong.mdb" && File.Exists(AppDomain.CurrentDomain.BaseDirectory + @"\CrazySong.mdb"))
                             {
                                 list[0] = "CrazySongEmpty.mdb";
                             }
@@ -113,7 +135,7 @@ namespace CrazyKTV_WebUpdater
                                 }
                                 else
                                 {
-                                    string FilePath = Application.StartupPath + @"\" + list[3];
+                                    string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"\" + list[3];
                                     if (!Directory.Exists(FilePath)) Directory.CreateDirectory(FilePath);
                                     DownloadFile(FilePath + @"\" + list[0], list[2], true);
                                 }
@@ -127,15 +149,12 @@ namespace CrazyKTV_WebUpdater
                 }
                 else
                 {
-                    this.BeginInvoke((Action)delegate()
-                    {
-                        label1.Text = "正在下載 " + list[0] + " 更新檔案...";
-                    });
+                    Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在下載 " + list[0] + " 更新檔案...");
 
                     CommonFunc.SaveVersionXmlFile(Global.WebUpdaterFile, list[0], list[1], list[2], list[3], list[4]);
                     if (list[0] != "VersionInfo")
                     {
-                        if (list[0] == "CrazySong.mdb" && File.Exists(Application.StartupPath + @"\CrazySong.mdb"))
+                        if (list[0] == "CrazySong.mdb" && File.Exists(AppDomain.CurrentDomain.BaseDirectory + @"\CrazySong.mdb"))
                         {
                             list[0] = "CrazySongEmpty.mdb";
                         }
@@ -147,7 +166,7 @@ namespace CrazyKTV_WebUpdater
                             }
                             else
                             {
-                                string FilePath = Application.StartupPath + @"\" + list[3];
+                                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"\" + list[3];
                                 if (!Directory.Exists(FilePath)) Directory.CreateDirectory(FilePath);
                                 DownloadFile(FilePath + @"\" + list[0], list[2], true);
                             }
@@ -156,20 +175,17 @@ namespace CrazyKTV_WebUpdater
                 }
             }
 
-            this.BeginInvoke((Action)delegate()
-            {
-                label1.Text = "正在解壓檔案,請稍待...";
-            });
+            Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在解壓檔案,請稍待...");
 
             List<string> FolderFileList = new List<string>()
             {
-                Application.StartupPath + @"\Folder_BackGround.exe",
-                Application.StartupPath + @"\Folder_BMP.exe",
-                Application.StartupPath + @"\Folder_Codec.exe",
-                Application.StartupPath + @"\Folder_Favorite.exe",
-                Application.StartupPath + @"\Folder_Lang.exe",
-                Application.StartupPath + @"\Folder_SongMgr.exe",
-                Application.StartupPath + @"\Folder_Web.exe",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_BackGround.exe",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_BMP.exe",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Codec.exe",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Favorite.exe",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Lang.exe",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_SongMgr.exe",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Web.exe",
             };
 
             foreach (string file in FolderFileList)
@@ -182,10 +198,7 @@ namespace CrazyKTV_WebUpdater
                 }
             }
 
-            this.BeginInvoke((Action)delegate ()
-            {
-                label1.Text = "已完成檔案更新。";
-            });
+            Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "已完成檔案更新。");
         }
 
         private bool DownloadFile(string File, string Url, bool UseProgBar)
@@ -199,13 +212,10 @@ namespace CrazyKTV_WebUpdater
                 HttpWebResponse Response = (HttpWebResponse)Request.GetResponse();
 
                 long FileSize = Response.ContentLength;
-                
+
                 if (UseProgBar)
                 {
-                    this.BeginInvoke((Action)delegate()
-                    {
-                        progressBar1.Maximum = (int)FileSize;
-                    });
+                    Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar1, "Maximum", (int)FileSize);
                 }
 
                 Stream DataStream = Response.GetResponseStream();
@@ -219,10 +229,7 @@ namespace CrazyKTV_WebUpdater
                     FStream.Write(Databuffer, 0, CompletedLength);
                     if (UseProgBar)
                     {
-                        this.BeginInvoke((Action)delegate()
-                        {
-                            progressBar1.Value = (int)TotalDLByte;
-                        });
+                        Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar1, "Value", (int)TotalDLByte);
                     }
                 }
                 FStream.Close();
@@ -237,8 +244,5 @@ namespace CrazyKTV_WebUpdater
             }
             return DownloadStatus;
         }
-
-
-
     }
 }

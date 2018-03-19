@@ -1,31 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Text;
 
 namespace CrazyKTV_WebUpdater
 {
-    static class Program
+    public class Program
     {
-        /// <summary>
-        /// 應用程式的主要進入點。
-        /// </summary>
-        [STAThread]
-        static void Main()
+        [STAThreadAttribute]
+        public static void Main()
         {
-            if (Environment.OSVersion.Version.Major >= 6) NativeMethods.SetProcessDPIAware();
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            AppDomain.CurrentDomain.AssemblyResolve += OnResolveAssembly;
+            App.Main();
         }
-    }
 
-    class Global
-    {
-        public static string WebUpdaterFile = Application.StartupPath + @"\CrazyKTV_WebUpdater.ver";
-        public static string WebUpdaterTempFile = Application.StartupPath + @"\CrazyKTV_WebUpdater.tmp";
-        public static string WebUpdaterUrl = "https://raw.githubusercontent.com/KenLuoTW/CrazyKTVSongMgr/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.ver";
+        private static Assembly OnResolveAssembly(object sender, ResolveEventArgs args)
+        {
+            Assembly executingAssembly = Assembly.GetExecutingAssembly();
+            AssemblyName assemblyName = new AssemblyName(args.Name);
 
-        public static List<List<string>> LocaleVerList = new List<List<string>>();
-        public static List<List<string>> RemoteVerList = new List<List<string>>();
+            string path = assemblyName.Name + ".dll";
+            if (assemblyName.CultureInfo.Equals(CultureInfo.InvariantCulture) == false)
+            {
+                path = String.Format(@"{0}\{1}", assemblyName.CultureInfo, path);
+            }
+
+            using (Stream stream = executingAssembly.GetManifestResourceStream(path))
+            {
+                if (stream == null)
+                    return null;
+
+                byte[] assemblyRawBytes = new byte[stream.Length];
+                stream.Read(assemblyRawBytes, 0, assemblyRawBytes.Length);
+                return Assembly.Load(assemblyRawBytes);
+            }
+        }
     }
 }
