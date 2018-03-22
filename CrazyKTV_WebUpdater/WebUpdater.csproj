@@ -31,7 +31,7 @@
     <PublisherName>Ken Luo</PublisherName>
     <SuiteName>CrazyKTV 更新程式</SuiteName>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.3.0</ApplicationVersion>
+    <ApplicationVersion>1.0.4.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -64,7 +64,8 @@
     <OutputPath>bin\x86\Release\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CrazyKTV_WebUpdater.Program</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\WebUpdater.ico</ApplicationIcon>
@@ -82,10 +83,6 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonMark, Version=0.1.0.0, Culture=neutral, PublicKeyToken=001ef8810438905d, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommonMark.NET.0.15.1\lib\net40-client\CommonMark.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -123,7 +120,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -141,7 +137,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -149,7 +144,6 @@
     <None Include="UpdateFile\CrazyKTV_WebUpdater.md" />
     <None Include="UpdateFile\CrazyKTV_WebUpdater.ver" />
     <None Include="UpdateFile\README_使用說明.doc" />
-    <None Include="WebUpdater_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -173,6 +167,7 @@
     <Content Include="UpdateFile\CrazyKTV_ConfigTool.exe" />
     <Content Include="UpdateFile\CrazyKTV_SongMgr.exe" />
     <Content Include="UpdateFile\CrazyKTV_WebUpdater.exe" />
+    <Content Include="UpdateFile\CrazyKTV_WebUpdater.html" />
     <Content Include="UpdateFile\CrazySong.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -193,16 +188,6 @@
     <Content Include="UpdateFile\SharpDX.dll" />
   </ItemGroup>
   <ItemGroup>
-    <PublishFile Include="CommonMark">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>Assembly</FileType>
-    </PublishFile>
     <PublishFile Include="UpdateFile\CassiniDev4-lib.dll">
       <Visible>False</Visible>
       <Group>
@@ -274,6 +259,16 @@
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="UpdateFile\CrazyKTV_WebUpdater.exe">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="UpdateFile\CrazyKTV_WebUpdater.html">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -425,11 +420,4 @@
     </PublishFile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="AfterResolveReferences">
-    <ItemGroup>
-      <EmbeddedResource Include="@(ReferenceCopyLocalPaths)" Condition="'%(ReferenceCopyLocalPaths.Extension)' == '.dll'">
-        <LogicalName>%(ReferenceCopyLocalPaths.DestinationSubDirectory)%(ReferenceCopyLocalPaths.Filename)%(ReferenceCopyLocalPaths.Extension)</LogicalName>
-      </EmbeddedResource>
-    </ItemGroup>
-  </Target>
 </Project>

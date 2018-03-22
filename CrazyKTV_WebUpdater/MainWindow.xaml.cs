@@ -19,20 +19,14 @@ namespace CrazyKTV_WebUpdater
         {
             InitializeComponent();
 
-            bool DownloadStatus = DownloadFile(Global.WebUpdaterMDFile, Global.WebUpdaterLogUrl, false);
+            bool DownloadStatus = DownloadFile(Global.WebUpdaterHtmlFile, Global.WebUpdaterHtml, false);
             if (DownloadStatus)
             {
-                if (File.Exists(Global.WebUpdaterMDFile))
+                if (File.Exists(Global.WebUpdaterHtmlFile))
                 {
                     if (!File.Exists(Global.WebUpdaterCSSFile))
                     {
                         DownloadFile(Global.WebUpdaterCSSFile, Global.WebUpdaterCSS, false);
-                    }
-
-                    using (var reader = new StreamReader(Global.WebUpdaterMDFile))
-                    using (var writer = new StreamWriter(Global.WebUpdaterHtmlFile))
-                    {
-                        CommonMark.CommonMarkConverter.Convert(reader, writer);
                     }
                     string curDir = Directory.GetCurrentDirectory();
                     WebBrowser1.Source = new Uri(string.Format("file:///{0}/CrazyKTV_WebUpdater.html", curDir));
