@@ -101,23 +101,48 @@ namespace CrazyKTV_WebUpdater
                 Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在檢查更新檔案,請稍待...");
                 Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar2, "Value", Global.RemoteVerList.IndexOf(list) + 1);
 
+                bool UpdateFile = false;
                 int LocaleListIndex = LocaleNameList.IndexOf(list[0]);
 
                 if (LocaleListIndex >= 0)
                 {
                     if (Convert.ToInt64(list[1]) > Convert.ToInt64(Global.LocaleVerList[LocaleListIndex][1]))
                     {
-                        Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在下載 " + list[0] + " 更新檔案...");
+                        UpdateFile = true;
+                    }
+                }
+                else
+                {
+                    UpdateFile = true;
+                }
 
-                        CommonFunc.SaveVersionXmlFile(Global.WebUpdaterFile, list[0], list[1], list[2], list[3], list[4]);
-                        if (list[0] != "VersionInfo")
+                if (UpdateFile)
+                {
+                    Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在下載 " + list[0] + " 更新檔案...");
+
+                    CommonFunc.SaveVersionXmlFile(Global.WebUpdaterFile, list[0], list[1], list[2], list[3], list[4]);
+                    if (list[0] != "VersionInfo")
+                    {
+                        switch (list[0])
                         {
-                            if (list[0] == "CrazySong.mdb" && File.Exists(AppDomain.CurrentDomain.BaseDirectory + @"\CrazySong.mdb"))
-                            {
-                                list[0] = "CrazySongEmpty.mdb";
-                            }
-                            else
-                            {
+                            case "CrazySong.mdb":
+                                if (!File.Exists(AppDomain.CurrentDomain.BaseDirectory + @"\CrazySong.mdb"))
+                                {
+                                    DownloadFile(list[0], list[2], true);
+                                }
+                                break;
+                            case "Folder_Codec.exe":
+                                if (Environment.OSVersion.Version.Major >= 6)
+                                {
+                                    DownloadFile(list[0], list[2], true);
+                                }
+                                else
+                                {
+                                    string xpurl = "https://raw.githubusercontent.com/CrazyKTV/WebUpdater/master/CrazyKTV_WebUpdater/UpdateFile/Folder_Codec_XP.exe";
+                                    DownloadFile(list[0], xpurl, true);
+                                }
+                                break;
+                            default:
                                 if (list[3] == "")
                                 {
                                     DownloadFile(list[0], list[2], true);
@@ -128,38 +153,12 @@ namespace CrazyKTV_WebUpdater
                                     if (!Directory.Exists(FilePath)) Directory.CreateDirectory(FilePath);
                                     DownloadFile(FilePath + @"\" + list[0], list[2], true);
                                 }
-                            }
-                        }
-                        else
-                        {
-                            if (list[2] != "") UnFolderFileArguments = list[2];
+                                break;
                         }
                     }
-                }
-                else
-                {
-                    Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在下載 " + list[0] + " 更新檔案...");
-
-                    CommonFunc.SaveVersionXmlFile(Global.WebUpdaterFile, list[0], list[1], list[2], list[3], list[4]);
-                    if (list[0] != "VersionInfo")
+                    else
                     {
-                        if (list[0] == "CrazySong.mdb" && File.Exists(AppDomain.CurrentDomain.BaseDirectory + @"\CrazySong.mdb"))
-                        {
-                            list[0] = "CrazySongEmpty.mdb";
-                        }
-                        else
-                        {
-                            if (list[3] == "")
-                            {
-                                DownloadFile(list[0], list[2], true);
-                            }
-                            else
-                            {
-                                string FilePath = AppDomain.CurrentDomain.BaseDirectory + @"\" + list[3];
-                                if (!Directory.Exists(FilePath)) Directory.CreateDirectory(FilePath);
-                                DownloadFile(FilePath + @"\" + list[0], list[2], true);
-                            }
-                        }
+                        if (list[2] != "") UnFolderFileArguments = list[2];
                     }
                 }
             }

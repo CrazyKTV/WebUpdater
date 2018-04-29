@@ -168,16 +168,13 @@
     <Content Include="UpdateFile\CrazyKTV_SongMgr.exe" />
     <Content Include="UpdateFile\CrazyKTV_WebUpdater.exe" />
     <Content Include="UpdateFile\CrazyKTV_WebUpdater.html" />
-    <Content Include="UpdateFile\CrazySong.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="UpdateFile\CrazySongMgr.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="UpdateFile\CrazySong.mdb" />
+    <Content Include="UpdateFile\CrazySongMgr.mdb" />
     <Content Include="UpdateFile\DirectShowLib-2005.dll" />
     <Content Include="UpdateFile\Folder_BackGround.exe" />
     <Content Include="UpdateFile\Folder_BMP.exe" />
     <Content Include="UpdateFile\Folder_Codec.exe" />
+    <Content Include="UpdateFile\Folder_Codec_XP.exe" />
     <Content Include="UpdateFile\Folder_Favorite.exe" />
     <Content Include="UpdateFile\Folder_Lang.exe" />
     <Content Include="UpdateFile\Folder_SongMgr.exe" />
