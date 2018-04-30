@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CrazyKTV_WebUpdater"
         mc:Ignorable="d"
-        Title="CrazyKTV 更新程式 v1.0.4" Height="714" Width="1005" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Title="CrazyKTV 更新程式" Height="714" Width="1005" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
 
         <Viewbox Stretch="Fill">
