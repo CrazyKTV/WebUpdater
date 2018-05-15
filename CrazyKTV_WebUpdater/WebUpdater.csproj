@@ -31,7 +31,7 @@
     <PublisherName>Ken Luo</PublisherName>
     <SuiteName>CrazyKTV 更新程式</SuiteName>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.5.0</ApplicationVersion>
+    <ApplicationVersion>1.0.6.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -64,8 +64,7 @@
     <OutputPath>bin\x86\Release\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>
-    </StartupObject>
+    <StartupObject>CrazyKTV_WebUpdater.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Resources\WebUpdater.ico</ApplicationIcon>
@@ -82,7 +81,17 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
   <ItemGroup>
+    <Reference Include="DotNetZip, Version=1.11.0.0, Culture=neutral, PublicKeyToken=6583c7c814667745, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetZip.1.11.0\lib\net20\DotNetZip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -120,6 +129,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -137,16 +147,28 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="UpdateFile\CrazyKTV_WebUpdater.106" />
     <None Include="UpdateFile\CrazyKTV_WebUpdater.md" />
     <None Include="UpdateFile\CrazyKTV_WebUpdater.ver" />
+    <None Include="UpdateFile\Folder_BackGround.zip" />
+    <None Include="UpdateFile\Folder_BMP.zip" />
+    <None Include="UpdateFile\Folder_Codec.zip" />
+    <None Include="UpdateFile\Folder_Codec_XP.zip" />
+    <None Include="UpdateFile\Folder_Favorite.zip" />
+    <None Include="UpdateFile\Folder_Lang.zip" />
+    <None Include="UpdateFile\Folder_SongMgr.zip" />
+    <None Include="UpdateFile\Folder_Web.zip" />
     <None Include="UpdateFile\README_使用說明.doc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WebUpdater.ico" />
@@ -159,6 +181,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DotNetZip.dll" />
     <Content Include="UpdateFile\CrazyKTV_WebUpdater.css" />
     <Content Include="UpdateFile\CassiniDev4-lib.dll" />
     <Content Include="UpdateFile\CrazyKTV.exe" />
@@ -335,6 +358,16 @@
       </TargetPath>
       <FileType>File</FileType>
     </PublishFile>
+    <PublishFile Include="UpdateFile\Folder_Codec_XP.exe">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
     <PublishFile Include="UpdateFile\Folder_Favorite.exe">
       <Visible>False</Visible>
       <PublishState>Exclude</PublishState>
@@ -417,4 +450,11 @@
     </PublishFile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterResolveReferences">
+    <ItemGroup>
+      <EmbeddedResource Include="@(ReferenceCopyLocalPaths)" Condition="'%(ReferenceCopyLocalPaths.Extension)' == '.dll'">
+        <LogicalName>%(ReferenceCopyLocalPaths.DestinationSubDirectory)%(ReferenceCopyLocalPaths.Filename)%(ReferenceCopyLocalPaths.Extension)</LogicalName>
+      </EmbeddedResource>
+    </ItemGroup>
+  </Target>
 </Project>

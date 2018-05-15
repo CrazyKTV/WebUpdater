@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Ionic.Zip;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -141,15 +143,14 @@ namespace CrazyKTV_WebUpdater
                                     DownloadFile(list[0], list[2], true);
                                 }
                                 break;
-                            case "Folder_Codec.exe":
+                            case "Folder_Codec.zip":
                                 if (Environment.OSVersion.Version.Major >= 6)
                                 {
                                     DownloadFile(list[0], list[2], true);
                                 }
                                 else
                                 {
-                                    string xpurl = "https://raw.githubusercontent.com/CrazyKTV/WebUpdater/master/CrazyKTV_WebUpdater/UpdateFile/Folder_Codec_XP.exe";
-                                    DownloadFile(list[0], xpurl, true);
+                                    DownloadFile(list[0], Global.CodecXPUrl, true);
                                 }
                                 break;
                             default:
@@ -177,28 +178,24 @@ namespace CrazyKTV_WebUpdater
 
             List<string> FolderFileList = new List<string>()
             {
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_BackGround.exe",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_BMP.exe",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Codec.exe",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Favorite.exe",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Lang.exe",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_SongMgr.exe",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Web.exe",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_BackGround.zip",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_BMP.zip",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Codec.zip",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Favorite.zip",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Lang.zip",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_SongMgr.zip",
+                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Web.zip",
             };
 
-            foreach (string file in FolderFileList)
-            {
-                if (File.Exists(file))
-                {
-                    Process p = Process.Start(file, UnFolderFileArguments);
-                    p.WaitForExit();
-                }
-            }
+            ReadOptions opt = new ReadOptions();
+            opt.Encoding = Encoding.Default;
 
             foreach (string file in FolderFileList)
             {
-                if (File.Exists(file))
+                using (var zip = ZipFile.Read(file, opt))
                 {
+                    zip.ExtractExistingFile = ExtractExistingFileAction.OverwriteSilently;
+                    zip.ExtractAll(AppDomain.CurrentDomain.BaseDirectory);
                     File.Delete(file);
                 }
             }
