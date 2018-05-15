@@ -196,8 +196,8 @@ namespace CrazyKTV_WebUpdater
                 {
                     zip.ExtractExistingFile = ExtractExistingFileAction.OverwriteSilently;
                     zip.ExtractAll(AppDomain.CurrentDomain.BaseDirectory);
-                    File.Delete(file);
                 }
+                File.Delete(file);
             }
 
             Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "已完成檔案更新。");
