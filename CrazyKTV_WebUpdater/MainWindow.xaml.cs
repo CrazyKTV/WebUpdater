@@ -21,6 +21,16 @@ namespace CrazyKTV_WebUpdater
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            string CurVer = " v" + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileMajorPart + "." +
+                                   FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileMinorPart + "." +
+                                   FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileBuildPart;
+
+            if (FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FilePrivatePart > 0) CurVer += "." + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FilePrivatePart;
+            this.Title += CurVer;
 
             bool DownloadStatus = DownloadFile(Global.WebUpdaterHtmlFile, Global.WebUpdaterHtml, false);
             if (DownloadStatus)
@@ -35,18 +45,6 @@ namespace CrazyKTV_WebUpdater
                     WebBrowser1.Source = new Uri(string.Format("file:///{0}/CrazyKTV_WebUpdater.html", curDir));
                 }
             }
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            string CurVer = " v" + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileMajorPart + "." +
-                                   FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileMinorPart + "." +
-                                   FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileBuildPart;
-
-            if (FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FilePrivatePart > 0) CurVer += "." + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FilePrivatePart;
-
-            
-            this.Title += CurVer;
 
             bool RebuildFile = false;
             if (!File.Exists(Global.WebUpdaterFile))
@@ -55,15 +53,13 @@ namespace CrazyKTV_WebUpdater
                 CommonFunc.SaveVersionXmlFile(Global.WebUpdaterFile, "VersionInfo", "20150831001", "", "", "版本日期及資訊");
                 RebuildFile = true;
             }
-            Global.LocaleVerList = CommonFunc.ScanVersionXmlFile(Global.WebUpdaterFile);
+            Global.LocaleVerList = CommonFunc.ScanVersionXmlFile(Global.WebUpdaterFile, null, false);
 
-            bool DownloadStatus = DownloadFile(Global.WebUpdaterTempFile, Global.WebUpdaterUrl, false);
-            if (DownloadStatus)
+            using (MemoryStream ms = Download(Global.WebUpdaterUrl, false))
             {
-                if (File.Exists(Global.WebUpdaterTempFile))
+                if (ms.Length > 0 )
                 {
-                    Global.RemoteVerList = CommonFunc.ScanVersionXmlFile(Global.WebUpdaterTempFile);
-                    File.Delete(Global.WebUpdaterTempFile);
+                    Global.RemoteVerList = CommonFunc.ScanVersionXmlFile("", ms, true);
 
                     if (Convert.ToInt64(Global.RemoteVerList[0][1]) > Convert.ToInt64(Global.LocaleVerList[0][1]) || RebuildFile)
                     {
@@ -88,17 +84,17 @@ namespace CrazyKTV_WebUpdater
                         label1.Content = "你的 CrazyKTV 已是最新版本。";
                     }
                 }
-            }
-            else
-            {
-                File.Delete(Global.WebUpdaterTempFile);
-                label1.Content = "暫時無法取得網路上的更新資料,請稍後再試。";
+                else
+                {
+                    label1.Content = "暫時無法取得網路上的更新資料,請稍後再試。";
+                }
             }
         }
 
         private void UpdateFileTask()
         {
             string UnFolderFileArguments = "-y";
+            var unZipTasks = new List<Task>();
 
             Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar2, "Maximum", Global.RemoteVerList.Count);
 
@@ -144,19 +140,28 @@ namespace CrazyKTV_WebUpdater
                                 }
                                 break;
                             case "Folder_Codec.zip":
-                                if (Environment.OSVersion.Version.Major >= 6)
+                                string url = (Environment.OSVersion.Version.Major >= 6) ? list[2] : Global.CodecXPUrl;
+                                MemoryStream mStreamCodec = Download(url, true);
+                                if (mStreamCodec.Length > 0)
                                 {
-                                    DownloadFile(list[0], list[2], true);
-                                }
-                                else
-                                {
-                                    DownloadFile(list[0], Global.CodecXPUrl, true);
+                                    unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamCodec)));
                                 }
                                 break;
                             default:
                                 if (list[3] == "")
                                 {
-                                    DownloadFile(list[0], list[2], true);
+                                    if (list[0].Contains(".zip"))
+                                    {
+                                        MemoryStream mStream = Download(list[2], true);
+                                        if (mStream.Length > 0)
+                                        {
+                                            unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStream)));
+                                        }
+                                    }
+                                    else
+                                    {
+                                        DownloadFile(list[0], list[2], true);
+                                    }
                                 }
                                 else
                                 {
@@ -174,77 +179,115 @@ namespace CrazyKTV_WebUpdater
                 }
             }
 
-            Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在解壓檔案,請稍待...");
+            Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在等待解壓縮檔案完成, 請稍待...");
 
-            List<string> FolderFileList = new List<string>()
+            Task.Factory.ContinueWhenAll(unZipTasks.ToArray(), EndTask =>
             {
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_BackGround.zip",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_BMP.zip",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Codec.zip",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Favorite.zip",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Lang.zip",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_SongMgr.zip",
-                AppDomain.CurrentDomain.BaseDirectory + @"\Folder_Web.zip",
-            };
+                Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "已完成檔案更新。");
+            });
+        }
 
-            ReadOptions opt = new ReadOptions();
-            opt.Encoding = Encoding.Default;
+        private MemoryStream Download(string Url, bool UseProgBar)
+        {
+            HttpWebRequest Request = (HttpWebRequest)HttpWebRequest.Create(Url);
+            MemoryStream mStream = new MemoryStream();
 
-            foreach (string file in FolderFileList)
+            try
             {
-                using (var zip = ZipFile.Read(file, opt))
+                using (HttpWebResponse Response = (HttpWebResponse)Request.GetResponse())
                 {
-                    zip.ExtractExistingFile = ExtractExistingFileAction.OverwriteSilently;
-                    zip.ExtractAll(AppDomain.CurrentDomain.BaseDirectory);
-                }
-                File.Delete(file);
-            }
+                    long FileSize = Response.ContentLength;
 
-            Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "已完成檔案更新。");
+                    if (UseProgBar)
+                    {
+                        Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar1, "Maximum", (int)FileSize);
+                    }
+
+                    using (Stream DataStream = Response.GetResponseStream())
+                    {
+                        byte[] Databuffer = new byte[8192];
+                        int CompletedLength = 0;
+                        long TotalDLByte = 0;
+
+                        while ((CompletedLength = DataStream.Read(Databuffer, 0, 8192)) > 0)
+                        {
+                            TotalDLByte += CompletedLength;
+                            mStream.Write(Databuffer, 0, CompletedLength);
+                            if (UseProgBar)
+                            {
+                                Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar1, "Value", (int)TotalDLByte);
+                            }
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "檔案連結錯誤!");
+            }
+            return mStream;
         }
 
         private bool DownloadFile(string File, string Url, bool UseProgBar)
         {
             bool DownloadStatus = false;
-            FileStream FStream = new FileStream(File, FileMode.Create);
+            HttpWebRequest Request = (HttpWebRequest)HttpWebRequest.Create(Url);
 
             try
             {
-                HttpWebRequest Request = (HttpWebRequest)HttpWebRequest.Create(Url);
-                HttpWebResponse Response = (HttpWebResponse)Request.GetResponse();
-
-                long FileSize = Response.ContentLength;
-
-                if (UseProgBar)
+                using (HttpWebResponse Response = (HttpWebResponse)Request.GetResponse())
                 {
-                    Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar1, "Maximum", (int)FileSize);
-                }
+                    long FileSize = Response.ContentLength;
 
-                Stream DataStream = Response.GetResponseStream();
-                byte[] Databuffer = new byte[8192];
-                int CompletedLength = 0;
-                long TotalDLByte = 0;
-
-                while ((CompletedLength = DataStream.Read(Databuffer, 0, 8192)) > 0)
-                {
-                    TotalDLByte += CompletedLength;
-                    FStream.Write(Databuffer, 0, CompletedLength);
                     if (UseProgBar)
                     {
-                        Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar1, "Value", (int)TotalDLByte);
+                        Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar1, "Maximum", (int)FileSize);
+                    }
+
+                    using (FileStream FStream = new FileStream(File, FileMode.Create))
+                    {
+                        using (Stream DataStream = Response.GetResponseStream())
+                        {
+                            byte[] Databuffer = new byte[8192];
+                            int CompletedLength = 0;
+                            long TotalDLByte = 0;
+
+                            while ((CompletedLength = DataStream.Read(Databuffer, 0, 8192)) > 0)
+                            {
+                                TotalDLByte += CompletedLength;
+                                FStream.Write(Databuffer, 0, CompletedLength);
+                                if (UseProgBar)
+                                {
+                                    Dispatcher.Invoke(DispatcherPriority.Background, new Action<ProgressBar, string, int>(CommonFunc.UpdateProgressBar), progressBar1, "Value", (int)TotalDLByte);
+                                }
+                            }
+                        }
                     }
                 }
-                FStream.Close();
-                DataStream.Close();
-                Response.Close();
                 DownloadStatus = true;
             }
             catch
             {
-                FStream.Close();
+                Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "檔案連結錯誤!");
                 DownloadStatus = false;
             }
             return DownloadStatus;
         }
+
+        private void unZIP(MemoryStream mStream)
+        {
+            mStream.Position = 0;
+            ReadOptions opt = new ReadOptions();
+            opt.Encoding = Encoding.Default;
+
+            using (var zip = ZipFile.Read(mStream, opt))
+            {
+                zip.ExtractExistingFile = ExtractExistingFileAction.OverwriteSilently;
+                zip.ExtractAll(AppDomain.CurrentDomain.BaseDirectory);
+            }
+            mStream.Close();
+        }
+
+
     }
 }

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml.Linq;
@@ -76,14 +74,24 @@ namespace CrazyKTV_WebUpdater
             xmldoc.Save(VersionFile);
         }
 
-        public static List<List<string>> ScanVersionXmlFile(string VersionFile)
+        public static List<List<string>> ScanVersionXmlFile(string VersionFile, Stream stream, bool isStream)
         {
             List<List<string>> VerValueListList = new List<List<string>>();
 
             try
             {
-                XElement rootElement = XElement.Load(VersionFile);
+                XElement rootElement;
 
+                if (isStream)
+                {
+                    stream.Position = 0;
+                    rootElement = XElement.Load(stream);
+                }
+                else
+                {
+                    rootElement = XElement.Load(VersionFile);
+                }
+                
                 foreach (XElement childNode in rootElement.Elements("File"))
                 {
                     List<string> list = new List<string>();
