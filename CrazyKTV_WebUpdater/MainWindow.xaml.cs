@@ -181,10 +181,17 @@ namespace CrazyKTV_WebUpdater
 
             Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "正在等待解壓縮檔案完成, 請稍待...");
 
-            Task.Factory.ContinueWhenAll(unZipTasks.ToArray(), EndTask =>
+            if (unZipTasks.Count > 0)
+            {
+                Task.Factory.ContinueWhenAll(unZipTasks.ToArray(), EndTask =>
+                {
+                    Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "已完成檔案更新。");
+                });
+            }
+            else
             {
                 Dispatcher.Invoke(DispatcherPriority.Background, new Action<Label, string, string>(CommonFunc.UpdateLabel), label1, "Content", "已完成檔案更新。");
-            });
+            }
         }
 
         private MemoryStream Download(string Url, bool UseProgBar)
