@@ -1,0 +1,169 @@
+﻿<FlowDocument xml:space="preserve" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontSize="14pt">
+	<Paragraph FontSize="20pt" Foreground = "blue">CrazyKTV 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">CrazyKTV 是一款免費的電腦卡拉OK點歌系統,由國人 Danny Chiao 歷時七年長期開發並免費提供給喜好唱歌的同好使用,有了它可以讓你在家也能享受 KTV 歡唱的樂趣。雖然這是一款免費的電腦卡拉OK點歌系統軟體,但功能一點都不遜色於付費軟體,不但支援播放各種常見的影音格式,同時也支援單/雙音軌的人聲 /伴唱切換,幾乎在各種層面上皆以超越了同類 KTV 點歌軟體。</Paragraph>
+	
+	<Table>
+		<Table.Columns>
+			<TableColumn></TableColumn>
+			<TableColumn></TableColumn>
+			<TableColumn></TableColumn>
+			<TableColumn></TableColumn>
+		</Table.Columns>
+		<TableRowGroup>
+			<TableRow>
+				<TableCell>
+					<Paragraph><Hyperlink NavigateUri="https://www.facebook.com/NewCrazyKTV">參觀 CrazyKTV 首頁</Hyperlink></Paragraph>
+				</TableCell>
+				<TableCell>
+					<Paragraph><Hyperlink NavigateUri="https://www.facebook.com/NewCrazyKTV/app_124662127694820?ref=page_internal">觀看設定與下載</Hyperlink></Paragraph>
+				</TableCell>
+				<TableCell>
+					<Paragraph><Hyperlink NavigateUri="https://sites.google.com/site/crazyktvhelp/">觀看線上使用說明</Hyperlink></Paragraph>
+				</TableCell>
+				<TableCell>
+					<Paragraph><Hyperlink NavigateUri="https://github.com/KenLuoTW/CrazyKTVSongMgr/wiki">觀看加歌程式說明</Hyperlink></Paragraph>
+				</TableCell>
+			</TableRow>
+		</TableRowGroup>
+	</Table>
+	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180621 更新記錄</Paragraph>
+	<Paragraph>加歌程式更新至 1.4.7.36 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.36 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【歌庫維護】我的最愛新增錢櫃新歌快報功能。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫維護】我的最愛用戶編號範圍改為 0021 ~ 0099, 以避免與錢櫃新歌快報編號相衝。</Paragraph></ListItem>
+		<ListItem><Paragraph>【錢櫃資料】資料更新變更由上次取得新歌日期隔天開始掃描, 以避免遺漏更新。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180620 更新記錄</Paragraph>
+	<Paragraph>加歌程式更新至 1.4.7.32 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.32 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【歌庫維護】我的最愛新增錢櫃排行榜功能。</Paragraph></ListItem>
+		<ListItem><Paragraph>【錢櫃資料】記錄已有歌曲改用文字檔來儲存。</Paragraph></ListItem>
+		<ListItem><Paragraph>【程式設定】新增離開程式時備份資料庫檔案至指定資料夾功能。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫設定】修正歌手群組與內建歌手群組相衝突的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫查詢】異常查詢加入「重複歌曲 (忽略括號)」項目。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】更新加歌程式參考資料庫。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180617 更新記錄</Paragraph>
+	<Paragraph>加歌程式更新至 1.4.7.26 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.26 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【歌庫設定】更新歌庫結構前, 預先判斷結構是否可更新。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】歌曲字數計算排除 CJK 標點符號區。</Paragraph></ListItem>
+		<ListItem><Paragraph>【加歌頁面】歌曲辨識方式新增「歌曲編號_歌名_歌手」項目。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌曲分析】智能辨識模式也支援分析「歌手\歌名」結構了。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫查詢】查詢列表右鍵選單加入「查詢此位歌手所有歌曲」項目。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】優化程式啟動速度。</Paragraph></ListItem>
+	</List>
+
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180614 更新記錄</Paragraph>
+	<Paragraph>加歌程式更新至 1.4.7.20 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.20 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【歌庫設定】歌手結構新增「其他」、「其他歌星」、「其他歌手」。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫設定】歌庫結構現在可以更新現有歌庫。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】變更更新記錄檔網址。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】修正「歌庫結構」、「自訂結構」及「監視目錄」頁面在隱藏時, 不會隨界面縮放而變更大小的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【程式設定】界面縮放現在可以自訂縮放大小。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】更新加歌程式參考資料庫。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180611 更新記錄</Paragraph>
+	<Paragraph>加歌程式更新至 1.4.7.14 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.14 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【加歌頁面】修正加入未在預設歌手資料庫的合唱歌手時, 預設歌手類別設為新進歌星時會加錯類別的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫查詢】修正若歌庫歌手不存在歌手資料庫時, 查詢「歌手類別不符」會發生錯誤的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【加歌頁面】拖入大量歌曲時, 現可以合唱歌手不分順序及歌手群組功能來判斷重複歌曲。</Paragraph></ListItem>
+		<ListItem><Paragraph>【查詢相關】修正歌曲、歌手查詢功能的一些錯誤。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌手管理】修正同步更新歌庫歌手時, 遇到含有撇號的歌手會發生錯誤的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】更新加歌程式參考資料庫。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180518 更新記錄</Paragraph>
+	<Paragraph>更新程式更新至 1.0.8 版。</Paragraph>
+	<Paragraph>CrazyKTV 更新程式 v1.0.8 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>不再內嵌 DotNetZip Library, 執行時會自動下載。 所有 ZIP 壓縮檔不再存成檔案, 直接在記憶體中解壓縮。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180515 更新記錄</Paragraph>
+	<Paragraph>更新程式更新至 1.0.7 版。</Paragraph>
+	<Paragraph>CrazyKTV 更新程式 v1.0.7 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>所有以 NSIS 所製作的資料夾自解壓縮檔改成以 ZIP 壓縮檔存放。</Paragraph></ListItem>
+		<ListItem><Paragraph>更新程式內嵌 DotNetZip Library, 以直接解壓 ZIP 壓縮檔。</Paragraph></ListItem>
+	</List>
+
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180514 更新記錄</Paragraph>
+	<Paragraph>加歌程式更新至 1.4.7.9 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.9 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【加歌頁面】修正在不搬移不複製模式下手動更新重複歌曲時, 歌曲路徑漏掉反斜線的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】避免還未檢查完資料庫就開啟視窗。</Paragraph></ListItem>
+	</List>
+
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180430 更新記錄</Paragraph>
+	<Paragraph>加歌程式更新至 1.4.7.7 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.7 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【加歌頁面】修正在不搬移不複製模式下手動更新重複歌曲時, 沒有更新到路徑的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】變更線上更新網址。</Paragraph></ListItem>
+	</List>
+	<Paragraph>CrazyKTV 更新程式更新至 1.0.5 版。</Paragraph>
+	<Paragraph><Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
+	<List>
+		<ListItem><Paragraph>變更在 WinXP 系統所下載的 LAVFilters 版本。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180320 更新記錄</Paragraph>
+	<Paragraph>加歌程式更新至 1.4.7.5 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.5 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【其它雜項】修復查詢功能的一些錯誤。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】更新 VLC 程式庫 (可播 VP9 了)。</Paragraph></ListItem>
+		<ListItem><Paragraph>【參考資料庫】更新錢櫃資料至 20180326。</Paragraph></ListItem>
+	</List>
+	<Paragraph>其它更新:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【Web 遠端遙控】更新為包含圖形介面的版本。</Paragraph></ListItem>
+		<ListItem><Paragraph>【影音解碼器】更新為目前最新版本。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180320 更新記錄</Paragraph>
+	<Paragraph>加歌程式更新至 1.4.7 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7 更新內容:</Paragraph>
+	<Paragraph><Hyperlink NavigateUri="https://github.com/CrazyKTV/SongMgr/releases/tag/v1.4.7">https://github.com/CrazyKTV/SongMgr/releases/tag/v1.4.7</Hyperlink></Paragraph>
+	<List>
+		<ListItem><Paragraph>【加歌頁面】解決新拖曳方式無法支援 Unicode 字串的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【加歌頁面】移除以系統管理員身份執行加歌程式時, 在加歌頁面顯示的提示訊息。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫轉換】修正轉換歌庫時,若歌手類別資料有誤, 會發生錯誤的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】修正加歌程式首次啟動時, 沒有載入參考資料的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【加歌頁面】歌曲辨識方式新增「歌手\歌名」項目。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】修正混用不同加歌程式時, 無法修正其它加歌程式寫入錯誤資料的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】另外偵測加歌程式參考資料庫。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】允許六碼歌庫不受語系編號範圍的影響, 以自訂編號 000000 ~ 099999 加入歌曲。</Paragraph></ListItem>
+		<ListItem><Paragraph>【加歌頁面】修正歌曲辨識方式在「歌手\歌名」模式下沒有進行問題歌曲處理的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫維護】修正新增我的最愛用戶後, 不會顯示在 CrazyKTV 主程式的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫查詢】歌曲查詢加入查詢「全部歌曲」項目。</Paragraph></ListItem>
+		<ListItem><Paragraph>【加歌頁面】加入未在預設歌手資料庫的合唱歌手時, 將其歌手類別設為預設歌曲資訊裡的歌手類別。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】變更歌曲缺號判斷方式。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】修正在歌曲 / 歌手列表移除項目後, 再編輯會發生錯誤的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】更新加歌程式參考資料庫。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20171004 更新記錄</Paragraph>
+	<Paragraph>主要更新加歌程式至 1.4.6 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.6 更新內容:</Paragraph>
+	<Paragraph><Hyperlink NavigateUri="https://github.com/CrazyKTV/SongMgr/releases/tag/v1.4.6">https://github.com/CrazyKTV/SongMgr/releases/tag/v1.4.6</Hyperlink></Paragraph>
+	<List>
+		<ListItem><Paragraph>【錢櫃資料】錢櫃歌曲列表加入右鍵選單以複製歌手名稱及歌曲名稱。</Paragraph></ListItem>
+		<ListItem><Paragraph>【加歌頁面】解決權限不同而無法從檔案總管拖曳檔案的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【資料編輯】發生歌手名稱空白問題時忽略更新歌曲。</Paragraph></ListItem>
+	</List>
+	
+</FlowDocument>
