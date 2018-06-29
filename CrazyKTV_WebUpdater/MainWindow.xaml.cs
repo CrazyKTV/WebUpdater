@@ -6,10 +6,14 @@ using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Markup;
 using System.Windows.Threading;
+using System.Xml;
 
 namespace CrazyKTV_WebUpdater
 {
@@ -32,43 +36,100 @@ namespace CrazyKTV_WebUpdater
             if (FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FilePrivatePart > 0) CurVer += "." + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FilePrivatePart;
             this.Title += CurVer;
 
-            bool DownloadStatus = DownloadFile(Global.WebUpdaterHtmlFile, Global.WebUpdaterHtml, false);
-            if (DownloadStatus)
+            using (MemoryStream ms = Download(Global.WebUpdaterLogUrl, false))
             {
-                if (File.Exists(Global.WebUpdaterHtmlFile))
+                if (ms.Length > 0)
                 {
-                    if (!File.Exists(Global.WebUpdaterCSSFile))
+                    ms.Position = 0;
+                    using (StreamReader sr = new StreamReader(ms))
                     {
-                        DownloadFile(Global.WebUpdaterCSSFile, Global.WebUpdaterCSS, false);
+                        string content = sr.ReadToEnd();
+                        using (StringReader strReader = new StringReader(content))
+                        {
+                            using (XmlReader xr = XmlReader.Create(strReader))
+                            {
+                                FlowDocument fdoc = (FlowDocument)XamlReader.Load(xr);
+                                CommonFunc.SubscribeToAllHyperlinks(fdoc);
+                                FlowDocument1.Document = fdoc;
+                            }
+                        }
                     }
-                    string curDir = Directory.GetCurrentDirectory();
-                    WebBrowser1.Source = new Uri(string.Format("file:///{0}/CrazyKTV_WebUpdater.html", curDir));
+                }
+                else
+                {
+                    label1.Content = "暫時無法取得網路上的更新記錄,請稍後再試。";
                 }
             }
+        }
 
+        private void Window_ContentRendered(object sender, EventArgs e)
+        {
             bool RebuildFile = false;
-            if (!File.Exists(Global.WebUpdaterFile))
-            {
-                CommonFunc.CreateVersionXmlFile(Global.WebUpdaterFile);
-                CommonFunc.SaveVersionXmlFile(Global.WebUpdaterFile, "VersionInfo", "20150831001", "", "", "版本日期及資訊");
-                RebuildFile = true;
-            }
-            Global.LocaleVerList = CommonFunc.ScanVersionXmlFile(Global.WebUpdaterFile, null, false);
+            if (!File.Exists(Global.WebUpdaterFile)) RebuildFile = true;
 
-            using (MemoryStream ms = Download(Global.WebUpdaterUrl, false))
+            if (RebuildFile)
             {
-                if (ms.Length > 0 )
+                bool DownloadFile = false;
+                string dir = AppDomain.CurrentDomain.BaseDirectory;
+
+                if (Directory.GetFileSystemEntries(dir).Length > 1 || Directory.GetDirectories(dir).Length > 0)
                 {
-                    Global.RemoteVerList = CommonFunc.ScanVersionXmlFile("", ms, true);
-
-                    if (Convert.ToInt64(Global.RemoteVerList[0][1]) > Convert.ToInt64(Global.LocaleVerList[0][1]) || RebuildFile)
+                    if (MessageBox.Show("這將會在目前資料夾下載並覆蓋 CrazyKTV 所有檔案！"+ Environment.NewLine　+ "你確定要下載 CrazyKTV 所有檔案嗎？", "偵測到未在空資料夾", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                     {
-                        if (RebuildFile)
+                        DownloadFile = true;
+                    }
+                    else
+                    {
+                        label1.Content = "已取消下載 CrazyKTV 所有檔案。";
+                    }
+                }
+                else
+                {
+                    if (MessageBox.Show("你確定要下載 CrazyKTV 所有檔案嗎?", "下載 CrazyKTV 所有檔案", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                    {
+                        DownloadFile = true;
+                    }
+                    else
+                    {
+                        label1.Content = "已取消下載 CrazyKTV 所有檔案。";
+                    }
+                }
+
+                if (DownloadFile)
+                {
+                    if (!File.Exists(Global.WebUpdaterFile))
+                    {
+                        CommonFunc.CreateVersionXmlFile(Global.WebUpdaterFile);
+                        CommonFunc.SaveVersionXmlFile(Global.WebUpdaterFile, "VersionInfo", "20150831001", "", "", "版本日期及資訊");
+                    }
+                    Global.LocaleVerList = CommonFunc.ScanVersionXmlFile(Global.WebUpdaterFile, null, false);
+
+                    using (MemoryStream ms = Download(Global.WebUpdaterUrl, false))
+                    {
+                        if (ms.Length > 0)
                         {
-                            Task.Factory.StartNew(() => UpdateFileTask());
+                            Global.RemoteVerList = CommonFunc.ScanVersionXmlFile("", ms, true);
                         }
                         else
                         {
+                            label1.Content = "暫時無法取得網路上的更新資料,請稍後再試。";
+                        }
+                    }
+                    Task.Factory.StartNew(() => UpdateFileTask());
+                }
+            }
+            else
+            {
+                Global.LocaleVerList = CommonFunc.ScanVersionXmlFile(Global.WebUpdaterFile, null, false);
+                using (MemoryStream ms = Download(Global.WebUpdaterUrl, false))
+                {
+                    if (ms.Length > 0)
+                    {
+                        Global.RemoteVerList = CommonFunc.ScanVersionXmlFile("", ms, true);
+
+                        if (Convert.ToInt64(Global.RemoteVerList[0][1]) > Convert.ToInt64(Global.LocaleVerList[0][1]))
+                        {
+
                             if (MessageBox.Show("你確定要更新檔案嗎?", "偵測到 CrazyKTV 版本更新", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                             {
                                 Task.Factory.StartNew(() => UpdateFileTask());
@@ -78,15 +139,15 @@ namespace CrazyKTV_WebUpdater
                                 label1.Content = "你的 CrazyKTV 還未更新至最新版本。";
                             }
                         }
+                        else
+                        {
+                            label1.Content = "你的 CrazyKTV 已是最新版本。";
+                        }
                     }
                     else
                     {
-                        label1.Content = "你的 CrazyKTV 已是最新版本。";
+                        label1.Content = "暫時無法取得網路上的更新資料,請稍後再試。";
                     }
-                }
-                else
-                {
-                    label1.Content = "暫時無法取得網路上的更新資料,請稍後再試。";
                 }
             }
         }
@@ -294,7 +355,5 @@ namespace CrazyKTV_WebUpdater
             }
             mStream.Close();
         }
-
-
     }
 }

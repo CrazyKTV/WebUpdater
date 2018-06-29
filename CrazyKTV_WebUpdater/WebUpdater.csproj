@@ -31,7 +31,7 @@
     <PublisherName>Ken Luo</PublisherName>
     <SuiteName>CrazyKTV 更新程式</SuiteName>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.9.0</ApplicationVersion>
+    <ApplicationVersion>1.0.10.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>false</BootstrapperEnabled>
@@ -77,7 +77,7 @@
     <ManifestKeyFile>WebUpdater_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -134,6 +134,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UpdateFile\CrazyKTV_WebUpdater.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -161,7 +165,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="UpdateFile\CrazyKTV_WebUpdater.106" />
+    <None Include="UpdateFile\CrazyKTV_WebUpdater.106">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="UpdateFile\CrazyKTV_WebUpdater.md" />
     <None Include="UpdateFile\CrazyKTV_WebUpdater.ver">
       <SubType>Designer</SubType>
