@@ -27,6 +27,22 @@
 		</TableRowGroup>
 	</Table>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180630 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">更新程式更新至 1.0.10 版。</Paragraph>
+	<Paragraph>CrazyKTV 更新程式 v1.0.10 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>改以 FlowDocument 文件顯示更新記錄。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.7.43 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.43 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【歌手管理】修正歌手圖片拖曳當掉的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】修正當判斷錢櫃及重複歌曲資料含有合唱歌手時, 沒有依合唱歌手數量去比對的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】判斷錢櫃資料時可去符號判斷。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】合併錢櫃資料判斷方式。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180621 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.7.36 版。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.7.36 更新內容:</Paragraph>
