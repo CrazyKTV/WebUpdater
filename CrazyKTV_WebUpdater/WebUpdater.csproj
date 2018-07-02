@@ -157,6 +157,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Cashbox\cashbox_3456goldsong.md" />
     <None Include="Cashbox\cashbox_newsong.md" />
     <None Include="Cashbox\cashbox_otherlangbill.md" />
     <None Include="Cashbox\cashbox_totalbill.md" />
