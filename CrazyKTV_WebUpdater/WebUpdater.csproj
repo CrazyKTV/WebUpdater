@@ -158,6 +158,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Cashbox\cashbox_newsong.md" />
+    <None Include="Cashbox\cashbox_otherlangbill.md" />
     <None Include="Cashbox\cashbox_totalbill.md" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest">
