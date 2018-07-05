@@ -27,6 +27,17 @@
 		</TableRowGroup>
 	</Table>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180705 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.7.54 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.54 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【錢櫃資料】更新參考資料庫至 20180705。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫查詢】查詢重複歌曲時, 可不依合唱歌手順序來比對。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】異常查詢新增「歌手未在資料庫」項目, 並修正各功能處理特殊字串的錯誤。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】修正因使用 Regex 取代所照成的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫維護】變更錢櫃排行榜相關資料取得方式。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180630 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">更新程式更新至 1.0.10 版。</Paragraph>
 	<Paragraph>CrazyKTV 更新程式 v1.0.10 更新內容:</Paragraph>
