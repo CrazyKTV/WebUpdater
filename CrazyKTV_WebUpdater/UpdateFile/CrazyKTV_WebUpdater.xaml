@@ -27,6 +27,13 @@
 		</TableRowGroup>
 	</Table>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180710 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.7.64 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.64 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【其它雜項】修正檔案統計錯誤。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180709 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.7.63 版。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.7.63 更新內容:</Paragraph>
