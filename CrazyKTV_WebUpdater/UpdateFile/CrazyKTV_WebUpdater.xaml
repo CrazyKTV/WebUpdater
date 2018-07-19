@@ -28,8 +28,8 @@
 	</Table>
 	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180719 更新記錄</Paragraph>
-	<Paragraph FontSize="16pt">加歌程式更新至 1.4.7.74 版。</Paragraph>
-	<Paragraph>CrazyKTV 加歌程式 v1.4.7.74 更新內容:</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.7.75 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.7.75 更新內容:</Paragraph>
 	<List>
 		<ListItem><Paragraph>【歌庫維護】修正變更歌曲路徑後未重新偵測檔案數量的問題。</Paragraph></ListItem>
 		<ListItem><Paragraph>【加歌頁面】新增分析歌曲時啟用音量偵測功能 。</Paragraph></ListItem>
