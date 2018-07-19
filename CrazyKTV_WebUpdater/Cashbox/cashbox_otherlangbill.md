@@ -1,4 +1,4 @@
-統計期間：2018/07/04 ~ 2018/07/10
+統計期間：2018/07/11 ~ 2018/07/17
 1 	25246 	粵語 	海闊天空 	BEYOND 		
 2 	25323 	粵語 	喜歡你 	BEYOND 		
 3 	25287 	粵語 	光輝歲月 	BEYOND 		
@@ -18,31 +18,31 @@
 1 	34339 	英語 	Faded 	Alan Walker 		
 2 	34304 	英語 	Chandelier 	Sia 		
 3 	34274 	英語 	Call Me Maybe 	CARLY RAE JEPSEN 		
-4 	34308 	英語 	Baby 	Justin Bieber 		
-5 	34151 	英語 	Love Story 	TAYLOR SWIFT 		
+4 	37446 	英語 	My Heart Will Go On 	Celine Dion 		
+5 	34156 	英語 	Nothing's Gonna Change My Love For You 	方大同 		
 6 	34333 	英語 	Home 	王詩安 		
-7 	34156 	英語 	Nothing's Gonna Change My Love For You 	方大同 		
-8 	34244 	英語 	In The End 	LINKIN PARK 		
+7 	34151 	英語 	Love Story 	TAYLOR SWIFT 		
+8 	34308 	英語 	Baby 	Justin Bieber 		
 9 	34330 	英語 	Summer 	Calvin Harris 		
-10 	37446 	英語 	My Heart Will Go On 	Celine Dion 		
-11 	34241 	英語 	Yellow 	COLDPLAY 		
-12 	34040 	英語 	When You're Gone 	AVRIL LAVIGNE 		
-13 	34295 	英語 	Just Give Me A Reason 	PINK、Nate Ruess 		
+10 	34241 	英語 	Yellow 	COLDPLAY 		
+11 	34244 	英語 	In The End 	LINKIN PARK 		
+12 	34284 	英語 	What Makes You Beautiful 	ONE DIRECTION 		
+13 	34040 	英語 	When You're Gone 	AVRIL LAVIGNE 		
 14 	34154 	英語 	Poker Face 	LADY GAGA 		
-15 	37181 	英語 	I Want It That Way 	BACKSTREET BOYS
+15 	34295 	英語 	Just Give Me A Reason 	PINK、Nate Ruess
 
 1 	89476 	日語 	FIRST LOVE 	宇多田ヒカル 		
-2 	78436 	日語 	千本桜 	和楽器バンド 		
-3 	78435 	日語 	Pen-Pineapple-Apple-Pen(PPAP) 	ピコ太郎 		
-4 	78433 	日語 	淚そうそう 	夏川里美 		
-5 	78161 	日語 	雪の花 	中島美嘉 		
+2 	78435 	日語 	Pen-Pineapple-Apple-Pen(PPAP) 	ピコ太郎 		
+3 	78433 	日語 	淚そうそう 	夏川里美 		
+4 	78436 	日語 	千本桜 	和楽器バンド 		
+5 	88723 	日語 	時の流れに身をまかせ 	鄧麗君 		
 6 	78159 	日語 	瞳を閉じて 	平井 堅 		
-7 	78424 	日語 	Can You Celebrate？ 	安室奈美惠 		
-8 	88723 	日語 	時の流れに身をまかせ 	鄧麗君 		
+7 	78161 	日語 	雪の花 	中島美嘉 		
+8 	78424 	日語 	Can You Celebrate？ 	安室奈美惠 		
 9 	88160 	日語 	EVERYTHING 	MISIA 		
-10 	88690 	日語 	つぐない 	鄧麗君 		
-11 	78434 	日語 	ようかい体操第一 	Dream5 		
-12 	88591 	日語 	SAY YES 	チャゲ ﹠飛鳥 		
-13 	88680 	日語 	津軽海峡‧冬景色 	石川さゆり 		
-14 	78155 	日語 	何日君再來 	鄧麗君 		
-15 	89679 	日語 	SECRET OF MY HEART 	倉木麻衣
+10 	88680 	日語 	津軽海峡‧冬景色 	石川さゆり 		
+11 	88186 	日語 	大阪しぐれ 	都はるみ 		
+12 	88760 	日語 	浪花節だよ人生は 	木村友衛 		
+13 	88690 	日語 	つぐない 	鄧麗君 		
+14 	78434 	日語 	ようかい体操第一 	Dream5 		
+15 	88462 	日語 	細雪 	五木ひろし
