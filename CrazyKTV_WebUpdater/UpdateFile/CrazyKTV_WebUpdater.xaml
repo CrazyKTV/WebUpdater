@@ -27,6 +27,17 @@
 		</TableRowGroup>
 	</Table>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180723 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【其它雜項】更換 Vlc.DotNet 套件。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】移除 HtmlAgilityPack 套件。</Paragraph></ListItem>
+		<ListItem><Paragraph>【播放介面】改良啟動及切換音軌速度、支援以歌曲設定音量啟動、修正部份格式解碼問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】全形符號「＋」、「＝」、「≠」計為一字。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】修正移除有建立索引的欄位時會發生錯誤的問題。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180719 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.7.75 版。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.7.75 更新內容:</Paragraph>
