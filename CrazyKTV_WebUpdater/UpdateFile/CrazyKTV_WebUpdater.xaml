@@ -36,7 +36,7 @@
 		<ListItem><Paragraph>【其它雜項】因應作業系統及播放核心的不同而停用/啟用相關設定控件。</Paragraph></ListItem>
 		<ListItem><Paragraph>【播放核心】加入設定音效處理器功能 (ffdshow)。</Paragraph></ListItem>
 		<ListItem><Paragraph>【播放核心】加入音效處理器 (ffdshow)。</Paragraph></ListItem>
-		<ListItem><Paragraph>【播放核心】【播放核心】加入音量平衡器 (DC-DSP 壓限器)。</Paragraph></ListItem>
+		<ListItem><Paragraph>【播放核心】加入音量平衡器 (DC-DSP 壓限器)。</Paragraph></ListItem>
 	</List>
 	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180806 更新記錄</Paragraph>
