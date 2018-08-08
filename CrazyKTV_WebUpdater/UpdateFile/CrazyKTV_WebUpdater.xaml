@@ -28,9 +28,10 @@
 	</Table>
 	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180808 更新記錄</Paragraph>
-	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.15 版, 主要完善新播放核心功能。</Paragraph>
-	<Paragraph>CrazyKTV 加歌程式 v1.4.8.15 更新內容:</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.16 版, 主要完善新播放核心功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.16 更新內容:</Paragraph>
 	<List>
+		<ListItem><Paragraph>【其它雜項】變更播放核心存放路徑以避免引用錯誤。</Paragraph></ListItem>
 		<ListItem><Paragraph>【其它雜項】全/半形符號「＆」計為一字。</Paragraph></ListItem>
 		<ListItem><Paragraph>【其它雜項】因應作業系統及播放核心的不同而停用/啟用相關設定控件。</Paragraph></ListItem>
 		<ListItem><Paragraph>【播放核心】加入設定音效處理器功能 (ffdshow)。</Paragraph></ListItem>
