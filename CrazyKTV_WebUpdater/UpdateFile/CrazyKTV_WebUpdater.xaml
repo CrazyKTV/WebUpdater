@@ -27,6 +27,13 @@
 		</TableRowGroup>
 	</Table>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180811 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">播放核心更新至 1.0.4 版, 主要完善新播放核心功能。</Paragraph>
+	<Paragraph>CrazyKTV 播放核心 v1.0.4 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>加入升降 Key 功能 (DC-DSP)。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180810 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">播放核心更新至 1.0.3 版, 主要完善新播放核心功能。</Paragraph>
 	<Paragraph>CrazyKTV 播放核心 v1.0.3 更新內容:</Paragraph>
