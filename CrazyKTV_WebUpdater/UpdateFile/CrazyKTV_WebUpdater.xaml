@@ -31,6 +31,7 @@
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.21 版, 主要完善新播放核心功能。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.21 更新內容:</Paragraph>
 	<List>
+		<ListItem><Paragraph>【其它雜項】修正啟用音效處理器時無法正常播放的問題。</Paragraph></ListItem>
 		<ListItem><Paragraph>【程式設定】未登錄音效處理器時, 禁止使用音效處理器。</Paragraph></ListItem>
 		<ListItem><Paragraph>【程式設定】新增登錄音效處理器 (ffdshow) 按鈕, 執行時會要求管理員權限。</Paragraph></ListItem>
 		<ListItem><Paragraph>【加歌頁面】播放檔案前先判斷檔案是否存在。</Paragraph></ListItem>
