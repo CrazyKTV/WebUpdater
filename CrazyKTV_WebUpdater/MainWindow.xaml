@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CrazyKTV_WebUpdater"
         mc:Ignorable="d"
-        Title="CrazyKTV 更新程式" Height="714" Width="1005" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ContentRendered="Window_ContentRendered">
+        Title="CrazyKTV 更新程式" Height="700" Width="1000" Loaded="Window_Loaded" ContentRendered="Window_ContentRendered">
     <Grid>
 
-        <Viewbox Stretch="Fill">
-            <Grid x:Name="MainGrid" Width="1005" Height="714">
-                <FlowDocumentScrollViewer x:Name="FlowDocument1" HorizontalAlignment="Left" Height="592" Margin="10,0,0,0" VerticalAlignment="Top" Width="985"/>
-                <ProgressBar x:Name="progressBar1" HorizontalAlignment="Left" Height="24" Margin="10,608,0,0" VerticalAlignment="Top" Width="985"/>
-                <ProgressBar x:Name="progressBar2" HorizontalAlignment="Left" Height="24" Margin="10,637,0,0" VerticalAlignment="Top" Width="985"/>
-                <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="10,672,0,0" VerticalAlignment="Top" Width="985" FontSize="18" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}"/>
+        <Viewbox>
+            <Grid x:Name="MainGrid">
+                <FlowDocumentScrollViewer x:Name="FlowDocument1" Height="540" Margin="10,0" Width="980" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <ProgressBar x:Name="progressBar1" Height="24" Margin="10,555,10,0" Width="980" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <ProgressBar x:Name="progressBar2" HorizontalAlignment="Left" Height="24" Margin="10,585,10,0" VerticalAlignment="Top" Width="980"/>
+                <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="10,620,10,0" VerticalAlignment="Top" Width="980" FontSize="18" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}"/>
             </Grid>
         </Viewbox>
 

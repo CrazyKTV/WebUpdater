@@ -2,11 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -25,6 +25,8 @@ namespace CrazyKTV_WebUpdater
         public MainWindow()
         {
             InitializeComponent();
+            ScalingUI(GetDPIScalingFactor());
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -192,6 +194,7 @@ namespace CrazyKTV_WebUpdater
                     CommonFunc.SaveVersionXmlFile(Global.WebUpdaterFile, list[0], list[1], list[2], list[3], list[4]);
                     if (list[0] != "VersionInfo")
                     {
+                        string url = string.Empty;
                         switch (list[0])
                         {
                             case "CrazySong.mdb":
@@ -201,11 +204,23 @@ namespace CrazyKTV_WebUpdater
                                 }
                                 break;
                             case "Folder_Codec.zip":
-                                string url = (Environment.OSVersion.Version.Major >= 6) ? list[2] : Global.CodecXPUrl;
-                                MemoryStream mStreamCodec = Download(url, true);
-                                if (mStreamCodec.Length > 0)
+                                url = (Environment.OSVersion.Version.Major >= 6) ? list[2] : Global.CodecXPUrl;
+                                using (MemoryStream mStreamCodec = Download(url, true))
                                 {
-                                    unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamCodec)));
+                                    if (mStreamCodec.Length > 0)
+                                    {
+                                        unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamCodec)));
+                                    }
+                                }
+                                break;
+                            case "Folder_FFmpeg.zip":
+                                url = (Environment.OSVersion.Version.Major >= 6) ? list[2] : Global.FFmpegXPUrl;
+                                using (MemoryStream mStreamCodec = Download(url, true))
+                                {
+                                    if (mStreamCodec.Length > 0)
+                                    {
+                                        unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamCodec)));
+                                    }
                                 }
                                 break;
                             default:
@@ -354,6 +369,56 @@ namespace CrazyKTV_WebUpdater
                 zip.ExtractAll(AppDomain.CurrentDomain.BaseDirectory);
             }
             mStream.Close();
+        }
+
+        #region --- Common 取得 DPI 大小 ---
+
+        public static float GetDPIScalingFactor()
+        {
+            using (Graphics graphics = Graphics.FromHwnd(IntPtr.Zero))
+            {
+                float DpiX = graphics.DpiX;
+                float DpiY = graphics.DpiY;
+                float ScalingFactor = (float)DpiX / 96;
+                return ScalingFactor;
+            }
+        }
+
+        #endregion
+
+        #region --- Common 縮放界面 ---
+
+        private void ScalingUI(float ScalingFactor)
+        {
+            float CustomScale = 1 / ScalingFactor;
+            double screenWidth = SystemParameters.PrimaryScreenWidth;
+            double screenHeight = SystemParameters.PrimaryScreenHeight;
+            if (screenWidth < 1024 || screenHeight < 768)
+            {
+                if (CustomScale < 1) UIScale(ScalingFactor, CustomScale);
+            }
+            UIScale(1, (float)0.8);
+        }
+
+        #endregion
+
+        private void UIScale(float ScalingFactor, float CustomScale)
+        {
+            this.Width = Convert.ToDouble(1000 * ScalingFactor * CustomScale);
+            this.Height = Convert.ToDouble(700 * ScalingFactor * CustomScale);
+            this.FlowDocument1.Width = Convert.ToDouble(980 * ScalingFactor * CustomScale);
+            this.FlowDocument1.Height = Convert.ToDouble(540 * ScalingFactor * CustomScale);
+            this.FlowDocument1.Margin = new Thickness(10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale, 10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale);
+            this.progressBar1.Width = Convert.ToDouble(980 * ScalingFactor * CustomScale);
+            this.progressBar1.Height = Convert.ToDouble(24 * ScalingFactor * CustomScale);
+            this.progressBar1.Margin = new Thickness(10 * ScalingFactor * CustomScale, 555 * ScalingFactor * CustomScale, 10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale);
+            this.progressBar2.Width = Convert.ToDouble(980 * ScalingFactor * CustomScale);
+            this.progressBar2.Height = Convert.ToDouble(24 * ScalingFactor * CustomScale);
+            this.progressBar2.Margin = new Thickness(10 * ScalingFactor * CustomScale, 585 * ScalingFactor * CustomScale, 10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale);
+            this.label1.Width = Convert.ToDouble(980 * ScalingFactor * CustomScale);
+            this.label1.Height = Convert.ToDouble(this.label1.Height * CustomScale);
+            this.label1.Margin = new Thickness(10 * ScalingFactor * CustomScale, 620 * ScalingFactor * CustomScale, 10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale);
+            this.label1.FontSize = Convert.ToDouble(18 * ScalingFactor * CustomScale);
         }
     }
 }
