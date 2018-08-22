@@ -36,8 +36,8 @@
 		<ListItem><Paragraph>下載 FFmpeg 時, 若系統為 Windows XP, 下載 FFmpeg For XP 的專用版本。</Paragraph></ListItem>
 	</List>
 	
-	<Paragraph FontSize="16pt" Foreground = "Brown">CrazyKTV 加歌程式更新至 1.4.8.26 版, 主要完善新播放核心功能。</Paragraph>
-	<Paragraph>CrazyKTV 加歌程式 v1.4.8.26 更新內容:</Paragraph>
+	<Paragraph FontSize="16pt" Foreground = "Brown">CrazyKTV 加歌程式更新至 1.4.8.27 版, 主要完善新播放核心功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.27 更新內容:</Paragraph>
 	<List>
 		<ListItem><Paragraph>【其它雜項】嘗試修正更新資料庫後, 在某些較慢電腦 UI 沒有啟用的問題。</Paragraph></ListItem>
 		<ListItem><Paragraph>【播放介面】移除 VlcPlayer 播放核心及相關項目。</Paragraph></ListItem>
