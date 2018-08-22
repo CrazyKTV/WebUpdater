@@ -397,7 +397,6 @@ namespace CrazyKTV_WebUpdater
             {
                 if (CustomScale < 1) UIScale(ScalingFactor, CustomScale);
             }
-            UIScale(1, (float)0.8);
         }
 
         #endregion

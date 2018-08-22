@@ -27,6 +27,41 @@
 		</TableRowGroup>
 	</Table>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180822 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">CrazyKTV 更新程式更新至 v1.0.11 版, 請重新下載更新程式並取代原檔案, 否則今後將無法繼續更新。</Paragraph>
+	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
+	<Paragraph>CrazyKTV 更新程式 v1.0.11 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>若視窗大小大於 DPI 調整後的螢幕大小, 依 DPI 係數去縮放視窗。</Paragraph></ListItem>
+		<ListItem><Paragraph>下載 FFmpeg 時, 若系統為 Windows XP, 下載 FFmpeg For XP 的專用版本。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph FontSize="16pt">CrazyKTV 加歌程式更新至 1.4.8.26 版, 主要完善新播放核心功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.26 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【其它雜項】嘗試修正更新資料庫後, 在某些較慢電腦 UI 沒有啟用的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【播放介面】移除 VlcPlayer 播放核心及相關項目。</Paragraph></ListItem>
+		<ListItem><Paragraph>【播放介面】支援隨選視訊+音訊+字幕播放方式。</Paragraph></ListItem>
+	</List>
+	
+	<Paragraph FontSize="16pt">CrazyKTV 加歌程式播放核心更新至 1.0.6 版。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式播放核心 v1.0.6 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>支援隨選視訊+音訊+字幕播放方式。</Paragraph></ListItem>
+	</List>
+	<Paragraph>目前播放核心支援功能:</Paragraph>
+	<List>
+		<ListItem><Paragraph>使用 LAV Filter 作為解碼核心, 並且不受系統解碼優先順序的影響。</Paragraph></ListItem>
+		<ListItem><Paragraph>解碼器不用登錄到系統裡, 可以直接從 Codec 資料夾調用。</Paragraph></ListItem>
+		<ListItem><Paragraph>使用 DC-DSP Filter 作為前置音效處理使用 (包含聲道切換、音量放大、音量平衡、升降 Key)。</Paragraph></ListItem>
+		<ListItem><Paragraph>支援使用 ffdshow Audio Processor 作為後置音效處理使用。</Paragraph></ListItem>
+		<ListItem><Paragraph>支援切換音軌及左右聲道 (人聲/伴唱切換)。</Paragraph></ListItem>
+		<ListItem><Paragraph>支援 EVR、VMR9, 並且可以全螢幕縮放。</Paragraph></ListItem>
+		<ListItem><Paragraph>支援播放內嵌 ASS 字幕或外掛 ASS 字幕檔的影片。</Paragraph></ListItem>
+		<ListItem><Paragraph>支援同時播放兩個影片畫面。</Paragraph></ListItem>
+		<ListItem><Paragraph>支援隨選視訊+音訊+字幕播放方式。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180811 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.21 版, 主要完善新播放核心功能。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.21 更新內容:</Paragraph>
