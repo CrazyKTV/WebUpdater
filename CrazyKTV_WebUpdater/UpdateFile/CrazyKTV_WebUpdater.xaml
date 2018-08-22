@@ -28,10 +28,11 @@
 	</Table>
 	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180822 更新記錄</Paragraph>
-	<Paragraph FontSize="16pt" Foreground = "Brown">CrazyKTV 更新程式更新至 v1.0.11 版, 請重新下載更新程式, 否則今後將無法繼續更新。</Paragraph>
+	<Paragraph FontSize="16pt" Foreground = "Brown">CrazyKTV 更新程式更新至 v1.0.12 版, 請重新下載更新程式, 否則今後將無法繼續更新。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
-	<Paragraph>CrazyKTV 更新程式 v1.0.11 更新內容:</Paragraph>
+	<Paragraph>CrazyKTV 更新程式 v1.0.12 更新內容:</Paragraph>
 	<List>
+		<ListItem><Paragraph>變更我的最愛背景圖檔資料夾解壓時所採用的編碼。</Paragraph></ListItem>
 		<ListItem><Paragraph>若視窗大小大於 DPI 調整後的螢幕大小, 依 DPI 係數去縮放視窗。</Paragraph></ListItem>
 		<ListItem><Paragraph>下載 FFmpeg 時, 若系統為 Windows XP, 下載 FFmpeg For XP 的專用版本。</Paragraph></ListItem>
 	</List>
