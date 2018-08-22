@@ -205,22 +205,18 @@ namespace CrazyKTV_WebUpdater
                                 break;
                             case "Folder_Codec.zip":
                                 url = (Environment.OSVersion.Version.Major >= 6) ? list[2] : Global.CodecXPUrl;
-                                using (MemoryStream mStreamCodec = Download(url, true))
+                                MemoryStream mStreamCodec = Download(url, true);
+                                if (mStreamCodec.Length > 0)
                                 {
-                                    if (mStreamCodec.Length > 0)
-                                    {
-                                        unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamCodec)));
-                                    }
+                                    unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamCodec)));
                                 }
                                 break;
                             case "Folder_FFmpeg.zip":
                                 url = (Environment.OSVersion.Version.Major >= 6) ? list[2] : Global.FFmpegXPUrl;
-                                using (MemoryStream mStreamCodec = Download(url, true))
+                                MemoryStream mStreamFFmpeg = Download(url, true);
+                                if (mStreamFFmpeg.Length > 0)
                                 {
-                                    if (mStreamCodec.Length > 0)
-                                    {
-                                        unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamCodec)));
-                                    }
+                                    unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamFFmpeg)));
                                 }
                                 break;
                             default:
