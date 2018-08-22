@@ -208,7 +208,7 @@ namespace CrazyKTV_WebUpdater
                                 MemoryStream mStreamCodec = Download(url, true);
                                 if (mStreamCodec.Length > 0)
                                 {
-                                    unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamCodec)));
+                                    unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamCodec, Encoding.Default)));
                                 }
                                 break;
                             case "Folder_FFmpeg.zip":
@@ -216,7 +216,7 @@ namespace CrazyKTV_WebUpdater
                                 MemoryStream mStreamFFmpeg = Download(url, true);
                                 if (mStreamFFmpeg.Length > 0)
                                 {
-                                    unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamFFmpeg)));
+                                    unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStreamFFmpeg, Encoding.Default)));
                                 }
                                 break;
                             default:
@@ -227,7 +227,14 @@ namespace CrazyKTV_WebUpdater
                                         MemoryStream mStream = Download(list[2], true);
                                         if (mStream.Length > 0)
                                         {
-                                            unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStream)));
+                                            if (list[0] == "Folder_Favorite.zip")
+                                            {
+                                                unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStream, Encoding.GetEncoding("Big5"))));
+                                            }
+                                            else
+                                            {
+                                                unZipTasks.Add(Task.Factory.StartNew(() => unZIP(mStream, Encoding.Default)));
+                                            }
                                         }
                                     }
                                     else
@@ -353,11 +360,11 @@ namespace CrazyKTV_WebUpdater
             return DownloadStatus;
         }
 
-        private void unZIP(MemoryStream mStream)
+        private void unZIP(MemoryStream mStream, Encoding encoding)
         {
             mStream.Position = 0;
             ReadOptions opt = new ReadOptions();
-            opt.Encoding = Encoding.Default;
+            opt.Encoding = encoding;
 
             using (var zip = ZipFile.Read(mStream, opt))
             {
