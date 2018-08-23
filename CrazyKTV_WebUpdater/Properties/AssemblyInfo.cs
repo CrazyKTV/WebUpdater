@@ -52,6 +52,6 @@ using System.Windows;
 // 指定為預設值: 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("4.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.12.0")]
+[assembly: AssemblyFileVersion("1.0.13.0")]
 [assembly: Guid("86368B19-55FB-4AB6-BE4A-1DD0D29B4EB7")]
 

@@ -394,9 +394,10 @@ namespace CrazyKTV_WebUpdater
         private void ScalingUI(float ScalingFactor)
         {
             float CustomScale = 1 / ScalingFactor;
-            double screenWidth = SystemParameters.PrimaryScreenWidth;
-            double screenHeight = SystemParameters.PrimaryScreenHeight;
-            if (screenWidth < 1024 || screenHeight < 768)
+            double screenWidth = SystemParameters.WorkArea.Size.Width;
+            double screenHeight = SystemParameters.WorkArea.Size.Height;
+
+            if (screenWidth < this.Width || screenHeight < this.Height)
             {
                 if (CustomScale < 1) UIScale(ScalingFactor, CustomScale);
             }
@@ -406,21 +407,21 @@ namespace CrazyKTV_WebUpdater
 
         private void UIScale(float ScalingFactor, float CustomScale)
         {
-            this.Width = Convert.ToDouble(1000 * ScalingFactor * CustomScale);
-            this.Height = Convert.ToDouble(700 * ScalingFactor * CustomScale);
-            this.FlowDocument1.Width = Convert.ToDouble(980 * ScalingFactor * CustomScale);
-            this.FlowDocument1.Height = Convert.ToDouble(540 * ScalingFactor * CustomScale);
-            this.FlowDocument1.Margin = new Thickness(10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale, 10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale);
-            this.progressBar1.Width = Convert.ToDouble(980 * ScalingFactor * CustomScale);
-            this.progressBar1.Height = Convert.ToDouble(24 * ScalingFactor * CustomScale);
-            this.progressBar1.Margin = new Thickness(10 * ScalingFactor * CustomScale, 555 * ScalingFactor * CustomScale, 10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale);
-            this.progressBar2.Width = Convert.ToDouble(980 * ScalingFactor * CustomScale);
-            this.progressBar2.Height = Convert.ToDouble(24 * ScalingFactor * CustomScale);
-            this.progressBar2.Margin = new Thickness(10 * ScalingFactor * CustomScale, 585 * ScalingFactor * CustomScale, 10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale);
-            this.label1.Width = Convert.ToDouble(980 * ScalingFactor * CustomScale);
+            this.Width = Convert.ToDouble(1000 * CustomScale);
+            this.Height = Convert.ToDouble(700 * CustomScale);
+            this.FlowDocument1.Width = Convert.ToDouble(980 * CustomScale);
+            this.FlowDocument1.Height = Convert.ToDouble(540 * CustomScale);
+            this.FlowDocument1.Margin = new Thickness(10 * CustomScale, 0 * CustomScale, 10 * CustomScale, 0 * CustomScale);
+            this.progressBar1.Width = Convert.ToDouble(980 * CustomScale);
+            this.progressBar1.Height = Convert.ToDouble(24 * CustomScale);
+            this.progressBar1.Margin = new Thickness(10 * CustomScale, 555 * CustomScale, 10 * CustomScale, 0 * CustomScale);
+            this.progressBar2.Width = Convert.ToDouble(980 * CustomScale);
+            this.progressBar2.Height = Convert.ToDouble(24 * CustomScale);
+            this.progressBar2.Margin = new Thickness(10 * CustomScale, 585 * CustomScale, 10 * CustomScale, 0 * CustomScale);
+            this.label1.Width = Convert.ToDouble(980 * CustomScale);
             this.label1.Height = Convert.ToDouble(this.label1.Height * CustomScale);
-            this.label1.Margin = new Thickness(10 * ScalingFactor * CustomScale, 620 * ScalingFactor * CustomScale, 10 * ScalingFactor * CustomScale, 0 * ScalingFactor * CustomScale);
-            this.label1.FontSize = Convert.ToDouble(18 * ScalingFactor * CustomScale);
+            this.label1.Margin = new Thickness(10 * CustomScale, 620 * CustomScale, 10 * CustomScale, 0 * CustomScale);
+            this.label1.FontSize = Convert.ToDouble(18 * CustomScale);
         }
     }
 }
