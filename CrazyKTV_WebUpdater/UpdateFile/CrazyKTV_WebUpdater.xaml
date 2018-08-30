@@ -27,6 +27,15 @@
 		</TableRowGroup>
 	</Table>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180830 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.32 版, 主要完善新播放核心功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.32 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【播放介面】新增畫面大小顯示及音量調整功能。</Paragraph></ListItem>
+		<ListItem><Paragraph>【播放介面】新增單擊播放畫面暫停播放功能。</Paragraph></ListItem>
+		<ListItem><Paragraph>【程式設定】修正從播放介面切回原視窗後, 程式視窗置頂顯示功能失效的問題。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180822 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt" Foreground = "Brown">CrazyKTV 更新程式更新至 v1.0.12 版, 請重新下載更新程式, 否則今後將無法繼續更新。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
