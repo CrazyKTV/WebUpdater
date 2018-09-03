@@ -27,7 +27,7 @@
 		</TableRowGroup>
 	</Table>
 	
-	<Paragraph><LineBreak /><Paragraph FontSize="16pt" Foreground = "Brown">如果您無法正常更新, 請將 CrazyKTV 更新程式更新至 v1.0.13 版。</Paragraph>
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="16pt" Foreground = "Brown">如果您無法正常更新, 請將 CrazyKTV 更新程式更新至 v1.0.13 版。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180903 更新記錄</Paragraph>
