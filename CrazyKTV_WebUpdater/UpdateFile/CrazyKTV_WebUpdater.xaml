@@ -30,6 +30,16 @@
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="16pt" Foreground = "Brown">如果您無法正常更新, 請將 CrazyKTV 更新程式更新至 v1.0.13 版。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20181209 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.44 版, 主要修正一些功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.44 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【播放介面】全螢幕時隱藏滑鼠游標。</Paragraph></ListItem>
+		<ListItem><Paragraph>【播放介面】修正隨選視訊資料夾沒有檔案時, 播放純音訊檔會發生錯誤的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【播放介面】減低點擊進度條失敗的機率。</Paragraph></ListItem>
+		<ListItem><Paragraph>【播放介面】修正關閉播放介面時, 有時可能會當掉的問題。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20180903 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.39 版, 主要修正一些功能。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.39 更新內容:</Paragraph>
