@@ -30,6 +30,15 @@
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="16pt" Foreground = "Brown">如果您無法正常更新, 請將 CrazyKTV 更新程式更新至 v1.0.13 版。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20190424 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.46 版, 主要加入匯出 SQLite 資料庫功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.46 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【程式設定】加入匯出 SQLite 資料庫功能。</Paragraph></ListItem>
+		<ListItem><Paragraph>更新 LAV Filters 至 0.74.1.10-git 版。(WinXP 除外)</Paragraph></ListItem>
+		<ListItem><Paragraph>更新 FFmpeg 至 4.1.1 版。(WinXP 除外)</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20181209 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.44 版, 主要修正一些功能。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.44 更新內容:</Paragraph>
