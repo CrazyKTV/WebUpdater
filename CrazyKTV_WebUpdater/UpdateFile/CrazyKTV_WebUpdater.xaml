@@ -30,6 +30,14 @@
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="16pt" Foreground = "Brown">如果您無法正常更新, 請將 CrazyKTV 更新程式更新至 v1.0.13 版。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20190804 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.48 版, 主要加入一些功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.48 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【歌庫查詢】異常查詢加入查詢同名歌曲項目。</Paragraph></ListItem>
+		<ListItem><Paragraph>更新錢櫃資料至 2019/08/01。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20190520 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.47 版, 主要修正一些功能。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.47 更新內容:</Paragraph>
