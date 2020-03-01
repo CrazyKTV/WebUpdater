@@ -30,6 +30,18 @@
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="16pt" Foreground = "Brown">如果您無法正常更新, 請將 CrazyKTV 更新程式更新至 v1.0.13 版。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20200301 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.51 版, 主要變更一些功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.51 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【錢櫃資料】變更錢櫃資料取得方式。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫維護】變更錢櫃新歌排行榜資料取得方式。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫維護】變更錢櫃點播總排行及錢櫃外語排行榜資料取得方式。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫維護】變更錢櫃懷念金曲資料取得方式。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌曲分析】除智能辨識模式外, 其餘辨識模式不再預先尋找歌手歌名資料。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫維護】變更 FFMPEG 音量平衡偵測方式。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20190804 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.48 版, 主要加入一些功能。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.48 更新內容:</Paragraph>
