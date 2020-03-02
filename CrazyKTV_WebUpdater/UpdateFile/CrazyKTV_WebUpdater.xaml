@@ -31,7 +31,7 @@
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20200302 更新記錄</Paragraph>
-	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.51 版, 主要修正上一版在某些情況下, 資料庫無法更新完成的問題。</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.52 版, 主要修正上一版在某些情況下, 資料庫無法更新完成的問題。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.52 更新內容:</Paragraph>
 	<List>
 		<ListItem><Paragraph>【歌庫維護】修復某些情況下會照成資料庫無法更新完成的問題。</Paragraph></ListItem>
