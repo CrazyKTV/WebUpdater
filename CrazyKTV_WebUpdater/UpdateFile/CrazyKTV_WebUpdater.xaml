@@ -36,7 +36,7 @@
 	<List>
 		<ListItem><Paragraph>【其它雜項】修正因修改系統地區語言後照成程式無法解析日期時間的問題。</Paragraph></ListItem>
 		<ListItem><Paragraph>更新 LAV Filters 至 0.74.1.32-git 版。(WinXP 除外)</Paragraph></ListItem>
-		<ListItem><Paragraph>更新 FFmpeg 至 4.1.1 版。(WinXP 除外)</Paragraph></ListItem>
+		<ListItem><Paragraph>更新 FFmpeg 至 4.2.2 版。(WinXP 除外)</Paragraph></ListItem>
 	</List>
 	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20200302 更新記錄</Paragraph>
