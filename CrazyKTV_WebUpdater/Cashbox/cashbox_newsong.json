@@ -1,0 +1,828 @@
+[
+    {
+        "Cashbox_Id": "15465",
+        "Song_Lang": "台語",
+        "Song_Singer": "唐飛",
+        "Song_SongName": "台西夜港邊",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15474",
+        "Song_Lang": "台語",
+        "Song_Singer": "郭金發",
+        "Song_SongName": "星夜的離別",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15475",
+        "Song_Lang": "台語",
+        "Song_Singer": "洪一峰",
+        "Song_SongName": "流浪的吉他",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15476",
+        "Song_Lang": "台語",
+        "Song_Singer": "王瑞霞",
+        "Song_SongName": "真心愛一回",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15478",
+        "Song_Lang": "台語",
+        "Song_Singer": "張秀卿",
+        "Song_SongName": "舊厝",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15480",
+        "Song_Lang": "台語",
+        "Song_Singer": "唐儷",
+        "Song_SongName": "姻緣燈",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15481",
+        "Song_Lang": "台語",
+        "Song_Singer": "林俊吉&麗蓉",
+        "Song_SongName": "相思滿滿",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15482",
+        "Song_Lang": "台語",
+        "Song_Singer": "唐儷",
+        "Song_SongName": "惜花連盆",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15483",
+        "Song_Lang": "台語",
+        "Song_Singer": "董育君",
+        "Song_SongName": "新娘裳",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15484",
+        "Song_Lang": "台語",
+        "Song_Singer": "董育君",
+        "Song_SongName": "鴛鴦花",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15485",
+        "Song_Lang": "台語",
+        "Song_Singer": "林俊吉&麗蓉",
+        "Song_SongName": "離別之夜",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15486",
+        "Song_Lang": "台語",
+        "Song_Singer": "黃妃&王瑞霞&秀蘭瑪雅",
+        "Song_SongName": "上水的輪迴",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15487",
+        "Song_Lang": "台語",
+        "Song_Singer": "高向鵬&鄧詠家",
+        "Song_SongName": "再會阿娜答",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15488",
+        "Song_Lang": "台語",
+        "Song_Singer": "上明&明卉",
+        "Song_SongName": "命運戲弄阮一生",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15489",
+        "Song_Lang": "台語",
+        "Song_Singer": "林俊吉",
+        "Song_SongName": "成功阮的名",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15490",
+        "Song_Lang": "台語",
+        "Song_Singer": "李明洋",
+        "Song_SongName": "冷月",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15491",
+        "Song_Lang": "台語",
+        "Song_Singer": "林俊吉",
+        "Song_SongName": "若是想起你",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15492",
+        "Song_Lang": "台語",
+        "Song_Singer": "李明洋",
+        "Song_SongName": "問心肝",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15493",
+        "Song_Lang": "台語",
+        "Song_Singer": "邱賢桂",
+        "Song_SongName": "最愛你",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "15494",
+        "Song_Lang": "台語",
+        "Song_Singer": "邱賢桂",
+        "Song_SongName": "痴心的人",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "34361",
+        "Song_Lang": "英語",
+        "Song_Singer": "范逸臣",
+        "Song_SongName": "Don't Wanna",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52927",
+        "Song_Lang": "國語",
+        "Song_Singer": "安心亞&宋柏緯",
+        "Song_SongName": "低頭戰",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52929",
+        "Song_Lang": "國語",
+        "Song_Singer": "孫燕姿",
+        "Song_SongName": "180 度",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52930",
+        "Song_Lang": "國語",
+        "Song_Singer": "楊丞琳",
+        "Song_SongName": "一萬零一種可能",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52931",
+        "Song_Lang": "國語",
+        "Song_Singer": "羅志祥",
+        "Song_SongName": "人肉搜索",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52932",
+        "Song_Lang": "國語",
+        "Song_Singer": "范瑋琪",
+        "Song_SongName": "十七歲的北極星",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52933",
+        "Song_Lang": "國語",
+        "Song_Singer": "王心凌",
+        "Song_SongName": "上了你的癮",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52934",
+        "Song_Lang": "國語",
+        "Song_Singer": "郭采潔",
+        "Song_SongName": "小狐狸",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52935",
+        "Song_Lang": "國語",
+        "Song_Singer": "五月天",
+        "Song_SongName": "小時候",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52936",
+        "Song_Lang": "國語",
+        "Song_Singer": "楊丞琳",
+        "Song_SongName": "不要對自己說謊",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52940",
+        "Song_Lang": "國語",
+        "Song_Singer": "楊丞琳",
+        "Song_SongName": "不敢說的懷念",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52941",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭煌奇",
+        "Song_SongName": "不傷人",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52942",
+        "Song_Lang": "國語",
+        "Song_Singer": "A-Lin",
+        "Song_SongName": "不管幸福來了沒有",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52944",
+        "Song_Lang": "國語",
+        "Song_Singer": "齊秦",
+        "Song_SongName": "太陽雨",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52945",
+        "Song_Lang": "國語",
+        "Song_Singer": "雅立",
+        "Song_SongName": "月半彎",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52946",
+        "Song_Lang": "國語",
+        "Song_Singer": "羅志祥",
+        "Song_SongName": "生理時鐘",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52947",
+        "Song_Lang": "國語",
+        "Song_Singer": "郭采潔",
+        "Song_SongName": "用微笑帶過",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52948",
+        "Song_Lang": "國語",
+        "Song_Singer": "林俊傑",
+        "Song_SongName": "白羊夢",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52950",
+        "Song_Lang": "國語",
+        "Song_Singer": "羅志祥",
+        "Song_SongName": "危險的念頭",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52951",
+        "Song_Lang": "國語",
+        "Song_Singer": "大合唱",
+        "Song_SongName": "同濟會會歌",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52955",
+        "Song_Lang": "國語",
+        "Song_Singer": "信",
+        "Song_SongName": "你好我就好",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52956",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭亞軒",
+        "Song_SongName": "完整我(抱緊你序曲)",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52957",
+        "Song_Lang": "國語",
+        "Song_Singer": "A-Lin",
+        "Song_SongName": "完整的浪漫",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52958",
+        "Song_Lang": "國語",
+        "Song_Singer": "羅志祥",
+        "Song_SongName": "忍住",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52959",
+        "Song_Lang": "國語",
+        "Song_Singer": "A-Lin",
+        "Song_SongName": "快樂生活",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52960",
+        "Song_Lang": "國語",
+        "Song_Singer": "楊丞琳",
+        "Song_SongName": "快轉",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52962",
+        "Song_Lang": "國語",
+        "Song_Singer": "A-Lin",
+        "Song_SongName": "我不想他",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52963",
+        "Song_Lang": "國語",
+        "Song_Singer": "范瑋琪",
+        "Song_SongName": "我不愛了",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52966",
+        "Song_Lang": "國語",
+        "Song_Singer": "梁文音",
+        "Song_SongName": "我們",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52967",
+        "Song_Lang": "國語",
+        "Song_Singer": "梁靜茹",
+        "Song_SongName": "我就知道那是愛",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52968",
+        "Song_Lang": "國語",
+        "Song_Singer": "田馥甄",
+        "Song_SongName": "我對不起我",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52974",
+        "Song_Lang": "國語",
+        "Song_Singer": "嚴爵&劉若英",
+        "Song_SongName": "沒有旋律配得上你",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52975",
+        "Song_Lang": "國語",
+        "Song_Singer": "羅志祥",
+        "Song_SongName": "刺青",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52976",
+        "Song_Lang": "國語",
+        "Song_Singer": "倪安東",
+        "Song_SongName": "幸福事小",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52977",
+        "Song_Lang": "國語",
+        "Song_Singer": "楊宗緯",
+        "Song_SongName": "幸福的風",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52978",
+        "Song_Lang": "國語",
+        "Song_Singer": "楊丞琳",
+        "Song_SongName": "幸福預兆",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52980",
+        "Song_Lang": "國語",
+        "Song_Singer": "孫燕姿",
+        "Song_SongName": "明天的記憶",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52981",
+        "Song_Lang": "國語",
+        "Song_Singer": "黃鴻升",
+        "Song_SongName": "前後左右",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52982",
+        "Song_Lang": "國語",
+        "Song_Singer": "A-Lin",
+        "Song_SongName": "勇敢的不是我",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52984",
+        "Song_Lang": "國語",
+        "Song_Singer": "林凡",
+        "Song_SongName": "怎麼離開你才能夠不傷心",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52985",
+        "Song_Lang": "國語",
+        "Song_Singer": "姜育恆",
+        "Song_SongName": "昨日夢已遠",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52986",
+        "Song_Lang": "國語",
+        "Song_Singer": "李玟",
+        "Song_SongName": "是真的愛你",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52987",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭敬騰",
+        "Song_SongName": "約定你",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52989",
+        "Song_Lang": "國語",
+        "Song_Singer": "蔡依林",
+        "Song_SongName": "娘子漢",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52991",
+        "Song_Lang": "國語",
+        "Song_Singer": "孫燕姿",
+        "Song_SongName": "時光小偷",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52992",
+        "Song_Lang": "國語",
+        "Song_Singer": "藍正龍",
+        "Song_SongName": "淚光翅膀",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52994",
+        "Song_Lang": "國語",
+        "Song_Singer": "倪安東",
+        "Song_SongName": "這一刻",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52995",
+        "Song_Lang": "國語",
+        "Song_Singer": "郭采潔",
+        "Song_SongName": "都是你",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52996",
+        "Song_Lang": "國語",
+        "Song_Singer": "A-Lin",
+        "Song_SongName": "圍城",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52997",
+        "Song_Lang": "國語",
+        "Song_Singer": "阿杜",
+        "Song_SongName": "幾年了",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52998",
+        "Song_Lang": "國語",
+        "Song_Singer": "郭采潔",
+        "Song_SongName": "最好的天氣",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "52999",
+        "Song_Lang": "國語",
+        "Song_Singer": "丁噹",
+        "Song_SongName": "最後一次寂寞",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53000",
+        "Song_Lang": "國語",
+        "Song_Singer": "柯有倫",
+        "Song_SongName": "最美的痕跡",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53002",
+        "Song_Lang": "國語",
+        "Song_Singer": "郭采潔",
+        "Song_SongName": "超完美地獄",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53003",
+        "Song_Lang": "國語",
+        "Song_Singer": "柯有倫",
+        "Song_SongName": "圓夢",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53004",
+        "Song_Lang": "國語",
+        "Song_Singer": "倪安東",
+        "Song_SongName": "想念是一條河",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53007",
+        "Song_Lang": "國語",
+        "Song_Singer": "信",
+        "Song_SongName": "愛在邊緣",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53009",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭亞軒",
+        "Song_SongName": "愛情的微光",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53010",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭亞軒",
+        "Song_SongName": "愛第三次",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53011",
+        "Song_Lang": "國語",
+        "Song_Singer": "A-Lin",
+        "Song_SongName": "愛歸你",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53012",
+        "Song_Lang": "國語",
+        "Song_Singer": "林凡",
+        "Song_SongName": "當我想起你時笑了",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53013",
+        "Song_Lang": "國語",
+        "Song_Singer": "黃鴻升",
+        "Song_SongName": "痴漢",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53014",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭敬騰",
+        "Song_SongName": "話不多",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53016",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭煌奇",
+        "Song_SongName": "漸行漸遠",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53017",
+        "Song_Lang": "國語",
+        "Song_Singer": "張惠妹(aMEI)",
+        "Song_SongName": "認真",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53018",
+        "Song_Lang": "國語",
+        "Song_Singer": "戴愛玲",
+        "Song_SongName": "說不出原諒",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53019",
+        "Song_Lang": "國語",
+        "Song_Singer": "倪安東",
+        "Song_SongName": "魁儡",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53020",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭煌奇",
+        "Song_SongName": "蓮子心",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53021",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭亞軒",
+        "Song_SongName": "靠近一點",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53022",
+        "Song_Lang": "國語",
+        "Song_Singer": "鄧養天",
+        "Song_SongName": "燒眼淚的人",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53023",
+        "Song_Lang": "國語",
+        "Song_Singer": "梁靜茹",
+        "Song_SongName": "環遊四季的愛",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53024",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭亞軒",
+        "Song_SongName": "鬆鬆",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53025",
+        "Song_Lang": "國語",
+        "Song_Singer": "羅志祥",
+        "Song_SongName": "羅生門",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53026",
+        "Song_Lang": "國語",
+        "Song_Singer": "楊宗緯",
+        "Song_SongName": "讓",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53027",
+        "Song_Lang": "國語",
+        "Song_Singer": "蕭亞軒",
+        "Song_SongName": "豔遇",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53028",
+        "Song_Lang": "國語",
+        "Song_Singer": "羅時豐",
+        "Song_SongName": "我的FU",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53029",
+        "Song_Lang": "國語",
+        "Song_Singer": "秀蘭瑪雅",
+        "Song_SongName": "續",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53030",
+        "Song_Lang": "國語",
+        "Song_Singer": "大慶小芳",
+        "Song_SongName": "我媽是我媽",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53031",
+        "Song_Lang": "國語",
+        "Song_Singer": "DADA(妲妲)",
+        "Song_SongName": "其實我很想你",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53032",
+        "Song_Lang": "國語",
+        "Song_Singer": "莊心妍",
+        "Song_SongName": "缺憾美",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53033",
+        "Song_Lang": "國語",
+        "Song_Singer": "小曼",
+        "Song_SongName": "停擺",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53034",
+        "Song_Lang": "國語",
+        "Song_Singer": "龍奔",
+        "Song_SongName": "遠方的我在想著你",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53035",
+        "Song_Lang": "國語",
+        "Song_Singer": "文慧如&鼓鼓(呂思緯)",
+        "Song_SongName": "全放空",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53036",
+        "Song_Lang": "國語",
+        "Song_Singer": "李英宏&馬念先",
+        "Song_SongName": "我想和你瞎",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53037",
+        "Song_Lang": "國語",
+        "Song_Singer": "黃偉晉",
+        "Song_SongName": "背光旅行",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53038",
+        "Song_Lang": "國語",
+        "Song_Singer": "孫盛希",
+        "Song_SongName": "逃",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53039",
+        "Song_Lang": "國語",
+        "Song_Singer": "陳傑瑞(Jeric)",
+        "Song_SongName": "偷偷看你",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53040",
+        "Song_Lang": "國語",
+        "Song_Singer": "邱比",
+        "Song_SongName": "基地",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53041",
+        "Song_Lang": "國語",
+        "Song_Singer": "原子邦妮",
+        "Song_SongName": "蟲洞詩",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53042",
+        "Song_Lang": "國語",
+        "Song_Singer": "吳青峰",
+        "Song_SongName": "譯夢機",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53043",
+        "Song_Lang": "國語",
+        "Song_Singer": "羅時豐",
+        "Song_SongName": "體驗",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53044",
+        "Song_Lang": "國語",
+        "Song_Singer": "PRC巴音汗",
+        "Song_SongName": "80000(想你想你想我)",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53045",
+        "Song_Lang": "國語",
+        "Song_Singer": "季彥霖",
+        "Song_SongName": "不想做朋友",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53046",
+        "Song_Lang": "國語",
+        "Song_Singer": "南宮嘉駿",
+        "Song_SongName": "坦然",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53047",
+        "Song_Lang": "國語",
+        "Song_Singer": "暴林",
+        "Song_SongName": "風在傷心我在流淚",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53048",
+        "Song_Lang": "國語",
+        "Song_Singer": "劉增瞳",
+        "Song_SongName": "尋",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "53049",
+        "Song_Lang": "國語",
+        "Song_Singer": "莊心妍",
+        "Song_SongName": "說再見就好",
+        "Song_CreatDate": "2020-04-23T00:00:00"
+    },
+    {
+        "Cashbox_Id": "78445",
+        "Song_Lang": "日語",
+        "Song_Singer": "羅志祥",
+        "Song_SongName": "Hero",
+        "Song_CreatDate": "2020-04-16T00:00:00"
+    }
+]
