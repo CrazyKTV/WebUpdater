@@ -28,9 +28,10 @@
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20200425 更新記錄</Paragraph>
-	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.58 版, 主要修正一些功能。</Paragraph>
-	<Paragraph>CrazyKTV 加歌程式 v1.4.8.58 更新內容:</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.59 版, 主要修正一些功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.59 更新內容:</Paragraph>
 	<List>
+		<ListItem><Paragraph>【錢櫃資料】修正因 CPU 性能不高導致平行運算來不及處理的問題。</Paragraph></ListItem>
 		<ListItem><Paragraph>【錢櫃資料】修正因變更錢櫃資料取得方式而照成 XP 無法使用的問題。</Paragraph></ListItem>
 	</List>
 	
