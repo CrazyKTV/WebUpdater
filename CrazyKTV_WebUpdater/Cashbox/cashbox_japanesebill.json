@@ -18,12 +18,6 @@
         "Song_Singer": "和楽器バンド"
     },
     {
-        "Cashbox_Id": "78159",
-        "Song_Lang": "日語",
-        "Song_SongName": "瞳を閉じて",
-        "Song_Singer": "平井  堅"
-    },
-    {
         "Cashbox_Id": "78433",
         "Song_Lang": "日語",
         "Song_SongName": "淚そうそう",
@@ -36,28 +30,22 @@
         "Song_Singer": "鄧麗君"
     },
     {
+        "Cashbox_Id": "78159",
+        "Song_Lang": "日語",
+        "Song_SongName": "瞳を閉じて",
+        "Song_Singer": "平井  堅"
+    },
+    {
         "Cashbox_Id": "88160",
         "Song_Lang": "日語",
         "Song_SongName": "EVERYTHING",
         "Song_Singer": "Misia"
     },
     {
-        "Cashbox_Id": "78443",
+        "Cashbox_Id": "88690",
         "Song_Lang": "日語",
-        "Song_SongName": "そばにいるね",
-        "Song_Singer": "青山黛瑪&Soulja"
-    },
-    {
-        "Cashbox_Id": "78435",
-        "Song_Lang": "日語",
-        "Song_SongName": "Pen-Pineapple-Apple-Pen(PPAP)",
-        "Song_Singer": "ピコ太郎"
-    },
-    {
-        "Cashbox_Id": "88591",
-        "Song_Lang": "日語",
-        "Song_SongName": "SAY YES",
-        "Song_Singer": "チャゲ ﹠飛鳥"
+        "Song_SongName": "つぐない",
+        "Song_Singer": "鄧麗君"
     },
     {
         "Cashbox_Id": "78424",
@@ -66,27 +54,39 @@
         "Song_Singer": "安室奈美惠"
     },
     {
-        "Cashbox_Id": "87995",
+        "Cashbox_Id": "89420",
         "Song_Lang": "日語",
-        "Song_SongName": "DEAREST",
-        "Song_Singer": "濱崎步"
+        "Song_SongName": "TSUNAMI",
+        "Song_Singer": "サザソオールスターズ"
     },
     {
-        "Cashbox_Id": "88680",
+        "Cashbox_Id": "78435",
         "Song_Lang": "日語",
-        "Song_SongName": "津軽海峡‧冬景色",
-        "Song_Singer": "石川さゆり"
+        "Song_SongName": "Pen-Pineapple-Apple-Pen(PPAP)",
+        "Song_Singer": "ピコ太郎"
     },
     {
-        "Cashbox_Id": "88587",
+        "Cashbox_Id": "78211",
         "Song_Lang": "日語",
-        "Song_SongName": "昴(すばる)",
-        "Song_Singer": "谷村新司"
+        "Song_SongName": "愛 のうた",
+        "Song_Singer": "倖田來未"
     },
     {
-        "Cashbox_Id": "88690",
+        "Cashbox_Id": "78443",
         "Song_Lang": "日語",
-        "Song_SongName": "つぐない",
-        "Song_Singer": "鄧麗君"
+        "Song_SongName": "そばにいるね",
+        "Song_Singer": "青山黛瑪&Soulja"
+    },
+    {
+        "Cashbox_Id": "78241",
+        "Song_Lang": "日語",
+        "Song_SongName": "未來ヘ",
+        "Song_Singer": "KIRORO"
+    },
+    {
+        "Cashbox_Id": "88898",
+        "Song_Lang": "日語",
+        "Song_SongName": "ラブ．スト﹣リ﹣は突然に",
+        "Song_Singer": "小田和正"
     }
 ]
