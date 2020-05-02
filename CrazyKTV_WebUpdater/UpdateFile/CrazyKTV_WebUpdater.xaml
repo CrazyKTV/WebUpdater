@@ -27,6 +27,22 @@
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="16pt" Foreground = "Brown">如果您無法正常更新, 請將 CrazyKTV 更新程式更新至 v1.0.13 版。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20200503 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.70 版, 主要修正一些功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.70 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【加歌頁面】修正加入合唱歌手時會因大小寫不同而加入重複歌手的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌手管理】修正重建歌庫歌手時會因合唱歌手大小寫不同而加入重複歌手的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【錢櫃資料】修正查詢錢櫃資料後沒有變更焦點至查詢列表的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【錢櫃資料】修正錢櫃資料列表使用鍵盤變更選取項目時無法批次修改的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【加歌頁面】修正歌曲新增列表使用鍵盤變更選取項目時無法批次修改的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌手管理】修正歌手查詢列表使用鍵盤變更選取項目時無法批次修改的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】變更一些文字輸入框的輸入模式。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫查詢】修正查詢歌庫後沒有變更焦點至歌庫查詢列表的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【歌庫查詢】修正歌庫查詢列表使用鍵盤變更選取項目時無法批次修改的問題。</Paragraph></ListItem>
+		<ListItem><Paragraph>【錢櫃資料】修正資料取得方式未判斷 .NET 4.5 是否已安裝的問題。</Paragraph></ListItem>
+	</List>
+	
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20200425 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.59 版, 主要修正一些功能。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.59 更新內容:</Paragraph>
