@@ -12,46 +12,16 @@
         "Song_Singer": "Beyond"
     },
     {
-        "Cashbox_Id": "25323",
-        "Song_Lang": "粵語",
-        "Song_SongName": "喜歡你",
-        "Song_Singer": "Beyond"
-    },
-    {
         "Cashbox_Id": "25019",
         "Song_Lang": "粵語",
         "Song_SongName": "友情歲月",
         "Song_Singer": "鄭伊健"
     },
     {
-        "Cashbox_Id": "19058",
+        "Cashbox_Id": "19057",
         "Song_Lang": "粵語",
-        "Song_SongName": "好心分手",
-        "Song_Singer": "王力宏&盧巧音"
-    },
-    {
-        "Cashbox_Id": "24562",
-        "Song_Lang": "粵語",
-        "Song_SongName": "極速",
-        "Song_Singer": "鄭伊健"
-    },
-    {
-        "Cashbox_Id": "25385",
-        "Song_Lang": "粵語",
-        "Song_SongName": "追",
-        "Song_Singer": "張國榮"
-    },
-    {
-        "Cashbox_Id": "19209",
-        "Song_Lang": "粵語",
-        "Song_SongName": "浮誇",
-        "Song_Singer": "陳奕迅"
-    },
-    {
-        "Cashbox_Id": "24673",
-        "Song_Lang": "粵語",
-        "Song_SongName": "好心分手",
-        "Song_Singer": "盧巧音"
+        "Song_SongName": "可惜我是水瓶座",
+        "Song_Singer": "楊千嬅"
     },
     {
         "Cashbox_Id": "19252",
@@ -60,10 +30,22 @@
         "Song_Singer": "陳奕迅"
     },
     {
-        "Cashbox_Id": "24916",
+        "Cashbox_Id": "19058",
         "Song_Lang": "粵語",
-        "Song_SongName": "甘心替代你",
-        "Song_Singer": "鄭伊健"
+        "Song_SongName": "好心分手",
+        "Song_Singer": "王力宏&盧巧音"
+    },
+    {
+        "Cashbox_Id": "19209",
+        "Song_Lang": "粵語",
+        "Song_SongName": "浮誇",
+        "Song_Singer": "陳奕迅"
+    },
+    {
+        "Cashbox_Id": "24620",
+        "Song_Lang": "粵語",
+        "Song_SongName": "每天愛你多一些",
+        "Song_Singer": "張學友"
     },
     {
         "Cashbox_Id": "25063",
@@ -72,21 +54,39 @@
         "Song_Singer": "張學友"
     },
     {
-        "Cashbox_Id": "19116",
+        "Cashbox_Id": "24914",
         "Song_Lang": "粵語",
-        "Song_SongName": "藍雨",
-        "Song_Singer": "張學友"
-    },
-    {
-        "Cashbox_Id": "19109",
-        "Song_Lang": "粵語",
-        "Song_SongName": "友情歲月",
+        "Song_SongName": "戰無不勝",
         "Song_Singer": "陳小春"
     },
     {
-        "Cashbox_Id": "24620",
+        "Cashbox_Id": "25062",
         "Song_Lang": "粵語",
-        "Song_SongName": "每天愛你多一些",
+        "Song_SongName": "容易受傷的女人",
+        "Song_Singer": "王菲"
+    },
+    {
+        "Cashbox_Id": "25323",
+        "Song_Lang": "粵語",
+        "Song_SongName": "喜歡你",
+        "Song_Singer": "Beyond"
+    },
+    {
+        "Cashbox_Id": "23573",
+        "Song_Lang": "粵語",
+        "Song_SongName": "心理遊戲",
+        "Song_Singer": "陳曉東"
+    },
+    {
+        "Cashbox_Id": "19178",
+        "Song_Lang": "粵語",
+        "Song_SongName": "這麼近",
         "Song_Singer": "張學友"
+    },
+    {
+        "Cashbox_Id": "19323",
+        "Song_Lang": "粵語",
+        "Song_SongName": "風的季節",
+        "Song_Singer": "SOLER"
     }
 ]
