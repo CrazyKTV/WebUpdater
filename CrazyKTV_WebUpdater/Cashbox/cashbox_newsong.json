@@ -231,6 +231,76 @@
         "Song_CreatDate": "\/Date(1588780800000+0800)\/"
     },
     {
+        "Cashbox_Id": "15508",
+        "Song_Lang": "台語",
+        "Song_Singer": "林良歡",
+        "Song_SongName": "上班小姐",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "15509",
+        "Song_Lang": "台語",
+        "Song_Singer": "黃思婷",
+        "Song_SongName": "女人的青春",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "15510",
+        "Song_Lang": "台語",
+        "Song_Singer": "林良歡",
+        "Song_SongName": "情有心愛無路",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "15511",
+        "Song_Lang": "台語",
+        "Song_Singer": "謝莉婷&朱德寶",
+        "Song_SongName": "野花望露",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "15512",
+        "Song_Lang": "台語",
+        "Song_Singer": "黃思婷",
+        "Song_SongName": "最後的溫柔",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "15513",
+        "Song_Lang": "台語",
+        "Song_Singer": "賴慧如",
+        "Song_SongName": "話攏你咧講",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "15514",
+        "Song_Lang": "台語",
+        "Song_Singer": "洪榮宏&張瀞云",
+        "Song_SongName": "駟馬難追",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "15515",
+        "Song_Lang": "台語",
+        "Song_Singer": "謝莉婷&朱德寶",
+        "Song_SongName": "擱再想起你",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "15516",
+        "Song_Lang": "台語",
+        "Song_Singer": "高向鵬",
+        "Song_SongName": "命運戀歌",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "15517",
+        "Song_Lang": "台語",
+        "Song_Singer": "洪榮宏&張瀞云",
+        "Song_SongName": "雨聲綿綿",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
         "Cashbox_Id": "34361",
         "Song_Lang": "英語",
         "Song_Singer": "范逸臣",
@@ -1034,6 +1104,55 @@
         "Song_Singer": "璽晨",
         "Song_SongName": "錯就錯在太愛你",
         "Song_CreatDate": "\/Date(1588780800000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "53070",
+        "Song_Lang": "國語",
+        "Song_Singer": "李玉璽",
+        "Song_SongName": "I'm Coming Home",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "53072",
+        "Song_Lang": "國語",
+        "Song_Singer": "畢書盡",
+        "Song_SongName": "撞",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "53073",
+        "Song_Lang": "國語",
+        "Song_Singer": "大哲",
+        "Song_SongName": "你是我心上的一根刺",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "53074",
+        "Song_Lang": "國語",
+        "Song_Singer": "大星",
+        "Song_SongName": "你是我的人",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "53075",
+        "Song_Lang": "國語",
+        "Song_Singer": "張碧晨",
+        "Song_SongName": "渡紅塵",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "53076",
+        "Song_Lang": "國語",
+        "Song_Singer": "雪十郎&麵筋哥",
+        "Song_SongName": "誰",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
+    },
+    {
+        "Cashbox_Id": "53077",
+        "Song_Lang": "國語",
+        "Song_Singer": "莊心妍",
+        "Song_SongName": "繁星點點",
+        "Song_CreatDate": "\/Date(1589385600000+0800)\/"
     },
     {
         "Cashbox_Id": "78445",

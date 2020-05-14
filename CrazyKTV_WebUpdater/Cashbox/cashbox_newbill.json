@@ -6,10 +6,52 @@
         "Song_Singer": "PRC巴音汗"
     },
     {
+        "Cashbox_Id": "53059",
+        "Song_Lang": "國語",
+        "Song_SongName": "我很快樂",
+        "Song_Singer": "周興哲"
+    },
+    {
+        "Cashbox_Id": "53062",
+        "Song_Lang": "國語",
+        "Song_SongName": "不夠",
+        "Song_Singer": "常艾非"
+    },
+    {
+        "Cashbox_Id": "53038",
+        "Song_Lang": "國語",
+        "Song_SongName": "逃",
+        "Song_Singer": "孫盛希"
+    },
+    {
         "Cashbox_Id": "53026",
         "Song_Lang": "國語",
         "Song_SongName": "讓",
         "Song_Singer": "楊宗緯"
+    },
+    {
+        "Cashbox_Id": "53057",
+        "Song_Lang": "國語",
+        "Song_SongName": "愛要怎麼放開",
+        "Song_Singer": "六哲"
+    },
+    {
+        "Cashbox_Id": "52977",
+        "Song_Lang": "國語",
+        "Song_SongName": "幸福的風",
+        "Song_Singer": "楊宗緯"
+    },
+    {
+        "Cashbox_Id": "52957",
+        "Song_Lang": "國語",
+        "Song_SongName": "完整的浪漫",
+        "Song_Singer": "A-Lin"
+    },
+    {
+        "Cashbox_Id": "53025",
+        "Song_Lang": "國語",
+        "Song_SongName": "羅生門",
+        "Song_Singer": "羅志祥"
     },
     {
         "Cashbox_Id": "52989",
@@ -24,28 +66,16 @@
         "Song_Singer": "文慧如&鼓鼓(呂思緯)"
     },
     {
-        "Cashbox_Id": "52957",
+        "Cashbox_Id": "52935",
         "Song_Lang": "國語",
-        "Song_SongName": "完整的浪漫",
-        "Song_Singer": "A-Lin"
+        "Song_SongName": "小時候",
+        "Song_Singer": "五月天"
     },
     {
-        "Cashbox_Id": "53038",
+        "Cashbox_Id": "53065",
         "Song_Lang": "國語",
-        "Song_SongName": "逃",
-        "Song_Singer": "孫盛希"
-    },
-    {
-        "Cashbox_Id": "53012",
-        "Song_Lang": "國語",
-        "Song_SongName": "當我想起你時笑了",
-        "Song_Singer": "林凡"
-    },
-    {
-        "Cashbox_Id": "53037",
-        "Song_Lang": "國語",
-        "Song_SongName": "背光旅行",
-        "Song_Singer": "黃偉晉"
+        "Song_SongName": "我們回不去了",
+        "Song_Singer": "季彥霖"
     },
     {
         "Cashbox_Id": "53017",
@@ -54,58 +84,22 @@
         "Song_Singer": "張惠妹(aMEI)"
     },
     {
-        "Cashbox_Id": "53025",
-        "Song_Lang": "國語",
-        "Song_SongName": "羅生門",
-        "Song_Singer": "羅志祥"
-    },
-    {
-        "Cashbox_Id": "52968",
-        "Song_Lang": "國語",
-        "Song_SongName": "我對不起我",
-        "Song_Singer": "田馥甄"
-    },
-    {
-        "Cashbox_Id": "52984",
-        "Song_Lang": "國語",
-        "Song_SongName": "怎麼離開你才能夠不傷心",
-        "Song_Singer": "林凡"
-    },
-    {
-        "Cashbox_Id": "52974",
-        "Song_Lang": "國語",
-        "Song_SongName": "沒有旋律配得上你",
-        "Song_Singer": "嚴爵&劉若英"
-    },
-    {
-        "Cashbox_Id": "52977",
-        "Song_Lang": "國語",
-        "Song_SongName": "幸福的風",
-        "Song_Singer": "楊宗緯"
-    },
-    {
-        "Cashbox_Id": "52960",
-        "Song_Lang": "國語",
-        "Song_SongName": "快轉",
-        "Song_Singer": "楊丞琳"
-    },
-    {
         "Cashbox_Id": "52982",
         "Song_Lang": "國語",
         "Song_SongName": "勇敢的不是我",
         "Song_Singer": "A-Lin"
     },
     {
-        "Cashbox_Id": "53042",
+        "Cashbox_Id": "53049",
         "Song_Lang": "國語",
-        "Song_SongName": "譯夢機",
-        "Song_Singer": "吳青峰"
+        "Song_SongName": "說再見就好",
+        "Song_Singer": "莊心妍"
     },
     {
-        "Cashbox_Id": "53045",
+        "Cashbox_Id": "52966",
         "Song_Lang": "國語",
-        "Song_SongName": "不想做朋友",
-        "Song_Singer": "季彥霖"
+        "Song_SongName": "我們",
+        "Song_Singer": "梁文音"
     },
     {
         "Cashbox_Id": "52929",
@@ -114,10 +108,52 @@
         "Song_Singer": "孫燕姿"
     },
     {
-        "Cashbox_Id": "53002",
+        "Cashbox_Id": "53058",
         "Song_Lang": "國語",
-        "Song_SongName": "超完美地獄",
-        "Song_Singer": "郭采潔"
+        "Song_SongName": "XD",
+        "Song_Singer": "Xunday"
+    },
+    {
+        "Cashbox_Id": "52968",
+        "Song_Lang": "國語",
+        "Song_SongName": "我對不起我",
+        "Song_Singer": "田馥甄"
+    },
+    {
+        "Cashbox_Id": "15501",
+        "Song_Lang": "台語",
+        "Song_SongName": "幸福的寄望",
+        "Song_Singer": "賴慧如&許仁杰"
+    },
+    {
+        "Cashbox_Id": "15506",
+        "Song_Lang": "台語",
+        "Song_SongName": "誰佇你心內",
+        "Song_Singer": "賴慧如"
+    },
+    {
+        "Cashbox_Id": "15452",
+        "Song_Lang": "台語",
+        "Song_SongName": "故事",
+        "Song_Singer": "郭婷筠"
+    },
+    {
+        "Cashbox_Id": "15446",
+        "Song_Lang": "台語",
+        "Song_SongName": "幸福門",
+        "Song_Singer": "郭婷筠&曾瑋中"
+    },
+    {
+        "Cashbox_Id": "15504",
+        "Song_Lang": "台語",
+        "Song_SongName": "愈愛愈堅強",
+        "Song_Singer": "林良歡"
+    },
+    {
+        "Cashbox_Id": "15444",
+        "Song_Lang": "台語",
+        "Song_SongName": "同款的月娘",
+        "Song_Singer": "翁立友&董育君"
     },
     {
         "Cashbox_Id": "15473",
@@ -126,16 +162,16 @@
         "Song_Singer": "蕭煌奇"
     },
     {
-        "Cashbox_Id": "15500",
+        "Cashbox_Id": "15467",
         "Song_Lang": "台語",
-        "Song_SongName": "痴心愛著你",
-        "Song_Singer": "高向鵬"
+        "Song_SongName": "因為愛你",
+        "Song_Singer": "董育君&莊振凱"
     },
     {
-        "Cashbox_Id": "15499",
+        "Cashbox_Id": "15447",
         "Song_Lang": "台語",
-        "Song_SongName": "因為我有你",
-        "Song_Singer": "良一&鄧詠家"
+        "Song_SongName": "眼中淚",
+        "Song_Singer": "翁立友"
     },
     {
         "Cashbox_Id": "15498",
@@ -144,64 +180,34 @@
         "Song_Singer": "邱賢桂&張瀛仁"
     },
     {
-        "Cashbox_Id": "15497",
-        "Song_Lang": "台語",
-        "Song_SongName": "眼淚哭乎乾",
-        "Song_Singer": "李明洋"
-    },
-    {
-        "Cashbox_Id": "15496",
-        "Song_Lang": "台語",
-        "Song_SongName": "寂寞的吉他聲",
-        "Song_Singer": "邱賢桂"
-    },
-    {
-        "Cashbox_Id": "15495",
-        "Song_Lang": "台語",
-        "Song_SongName": "若有一天",
-        "Song_Singer": "李明洋"
-    },
-    {
-        "Cashbox_Id": "15494",
-        "Song_Lang": "台語",
-        "Song_SongName": "痴心的人",
-        "Song_Singer": "邱賢桂"
-    },
-    {
-        "Cashbox_Id": "15493",
-        "Song_Lang": "台語",
-        "Song_SongName": "最愛你",
-        "Song_Singer": "邱賢桂"
-    },
-    {
         "Cashbox_Id": "15492",
         "Song_Lang": "台語",
         "Song_SongName": "問心肝",
         "Song_Singer": "李明洋"
     },
     {
-        "Cashbox_Id": "15491",
+        "Cashbox_Id": "15503",
         "Song_Lang": "台語",
-        "Song_SongName": "若是想起你",
-        "Song_Singer": "林俊吉"
+        "Song_SongName": "風中淚",
+        "Song_Singer": "黃思婷"
     },
     {
-        "Cashbox_Id": "15490",
+        "Cashbox_Id": "15477",
         "Song_Lang": "台語",
-        "Song_SongName": "冷月",
-        "Song_Singer": "李明洋"
+        "Song_SongName": "虛情假意",
+        "Song_Singer": "唐儷&莊振凱"
     },
     {
-        "Cashbox_Id": "15489",
+        "Cashbox_Id": "15450",
         "Song_Lang": "台語",
-        "Song_SongName": "成功阮的名",
-        "Song_Singer": "林俊吉"
+        "Song_SongName": "我愛你袂凍想你",
+        "Song_Singer": "翁立友"
     },
     {
-        "Cashbox_Id": "15488",
+        "Cashbox_Id": "15471",
         "Song_Lang": "台語",
-        "Song_SongName": "命運戲弄阮一生",
-        "Song_Singer": "上明&明卉"
+        "Song_SongName": "錯愛的人",
+        "Song_Singer": "唐儷"
     },
     {
         "Cashbox_Id": "15487",
@@ -210,10 +216,10 @@
         "Song_Singer": "高向鵬&鄧詠家"
     },
     {
-        "Cashbox_Id": "15486",
+        "Cashbox_Id": "15495",
         "Song_Lang": "台語",
-        "Song_SongName": "上水的輪迴",
-        "Song_Singer": "黃妃&王瑞霞&秀蘭瑪雅"
+        "Song_SongName": "若有一天",
+        "Song_Singer": "李明洋"
     },
     {
         "Cashbox_Id": "15485",
@@ -222,21 +228,15 @@
         "Song_Singer": "林俊吉&麗蓉"
     },
     {
-        "Cashbox_Id": "15484",
+        "Cashbox_Id": "15469",
         "Song_Lang": "台語",
-        "Song_SongName": "鴛鴦花",
-        "Song_Singer": "董育君"
+        "Song_SongName": "脆ㄆ",
+        "Song_Singer": "大支&春風"
     },
     {
-        "Cashbox_Id": "15483",
+        "Cashbox_Id": "15466",
         "Song_Lang": "台語",
-        "Song_SongName": "新娘裳",
-        "Song_Singer": "董育君"
-    },
-    {
-        "Cashbox_Id": "15482",
-        "Song_Lang": "台語",
-        "Song_SongName": "惜花連盆",
-        "Song_Singer": "唐儷"
+        "Song_SongName": "相逢台西港",
+        "Song_Singer": "唐飛"
     }
 ]
