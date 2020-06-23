@@ -27,6 +27,15 @@
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="16pt" Foreground = "Brown">如果您無法正常更新, 請將 CrazyKTV 更新程式更新至 v1.0.13 版。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20200623 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.75 版, 因新主程式需求而變更一些功能。</Paragraph>
+	<Paragraph>CrazyKTV 加歌程式 v1.4.8.75 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>【其它雜項】支援新的聲道定義。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】變更我的最愛 ID 定義。</Paragraph></ListItem>
+		<ListItem><Paragraph>【其它雜項】變更資料庫版本偵測方式。</Paragraph></ListItem>
+	</List>
+    
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20200503 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.70 版, 主要修正一些功能。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.70 更新內容:</Paragraph>
