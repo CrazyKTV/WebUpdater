@@ -6,22 +6,16 @@
         "Song_Singer": "邱振哲"
     },
     {
-        "Cashbox_Id": "52175",
-        "Song_Lang": "國語",
-        "Song_SongName": "天黑請閉眼",
-        "Song_Singer": "陳零九&邱鋒澤"
-    },
-    {
         "Cashbox_Id": "52882",
         "Song_Lang": "國語",
         "Song_SongName": "想見你想見你想見你",
         "Song_Singer": "八三夭"
     },
     {
-        "Cashbox_Id": "52857",
+        "Cashbox_Id": "52175",
         "Song_Lang": "國語",
-        "Song_SongName": "野狼 Disco",
-        "Song_Singer": "寶石Gem"
+        "Song_SongName": "天黑請閉眼",
+        "Song_Singer": "陳零九&邱鋒澤"
     },
     {
         "Cashbox_Id": "51679",
@@ -42,16 +36,22 @@
         "Song_Singer": "高爾宣OSN"
     },
     {
+        "Cashbox_Id": "53087",
+        "Song_Lang": "國語",
+        "Song_SongName": "少年",
+        "Song_Singer": "夢然"
+    },
+    {
+        "Cashbox_Id": "53168",
+        "Song_Lang": "國語",
+        "Song_SongName": "Mojito",
+        "Song_Singer": "周杰倫"
+    },
+    {
         "Cashbox_Id": "40504",
         "Song_Lang": "國語",
         "Song_SongName": "那女孩對我說",
         "Song_Singer": "黃義達"
-    },
-    {
-        "Cashbox_Id": "51082",
-        "Song_Lang": "國語",
-        "Song_SongName": "再見煙火",
-        "Song_Singer": "卓義峯"
     },
     {
         "Cashbox_Id": "52473",
@@ -66,10 +66,10 @@
         "Song_Singer": "徐佳瑩"
     },
     {
-        "Cashbox_Id": "52727",
+        "Cashbox_Id": "51034",
         "Song_Lang": "國語",
-        "Song_SongName": "過客",
-        "Song_Singer": "阿涵"
+        "Song_SongName": "年少有為",
+        "Song_Singer": "李榮浩"
     },
     {
         "Cashbox_Id": "51449",
@@ -78,22 +78,28 @@
         "Song_Singer": "A-Lin"
     },
     {
-        "Cashbox_Id": "52806",
-        "Song_Lang": "國語",
-        "Song_SongName": "多想在平庸的生活擁抱你",
-        "Song_Singer": "隔壁老樊"
-    },
-    {
-        "Cashbox_Id": "52785",
-        "Song_Lang": "國語",
-        "Song_SongName": "芒種",
-        "Song_Singer": "音闕詩聽&趙方婧"
-    },
-    {
         "Cashbox_Id": "51760",
         "Song_Lang": "國語",
         "Song_SongName": "來自天堂的魔鬼",
         "Song_Singer": "鄧紫棋"
+    },
+    {
+        "Cashbox_Id": "51082",
+        "Song_Lang": "國語",
+        "Song_SongName": "再見煙火",
+        "Song_Singer": "卓義峯"
+    },
+    {
+        "Cashbox_Id": "52857",
+        "Song_Lang": "國語",
+        "Song_SongName": "野狼 Disco",
+        "Song_Singer": "寶石Gem"
+    },
+    {
+        "Cashbox_Id": "52727",
+        "Song_Lang": "國語",
+        "Song_SongName": "過客",
+        "Song_Singer": "阿涵"
     },
     {
         "Cashbox_Id": "46578",
@@ -102,22 +108,16 @@
         "Song_Singer": "林俊傑"
     },
     {
-        "Cashbox_Id": "51034",
+        "Cashbox_Id": "50077",
         "Song_Lang": "國語",
-        "Song_SongName": "年少有為",
-        "Song_Singer": "李榮浩"
+        "Song_SongName": "光年之外",
+        "Song_Singer": "鄧紫棋"
     },
     {
-        "Cashbox_Id": "50714",
+        "Cashbox_Id": "50049",
         "Song_Lang": "國語",
-        "Song_SongName": "辣台妹",
-        "Song_Singer": "頑童MJ116"
-    },
-    {
-        "Cashbox_Id": "52363",
-        "Song_Lang": "國語",
-        "Song_SongName": "畢竟深愛過",
-        "Song_Singer": "六哲"
+        "Song_SongName": "演員",
+        "Song_Singer": "薛之謙"
     },
     {
         "Cashbox_Id": "15053",
@@ -144,10 +144,10 @@
         "Song_Singer": "王識賢&孫淑媚"
     },
     {
-        "Cashbox_Id": "73640",
+        "Cashbox_Id": "15498",
         "Song_Lang": "台語",
-        "Song_SongName": "作陣彼一暝",
-        "Song_Singer": "阿吉仔"
+        "Song_SongName": "愛的數字",
+        "Song_Singer": "邱賢桂&張瀛仁"
     },
     {
         "Cashbox_Id": "75565",
@@ -156,40 +156,22 @@
         "Song_Singer": "江蕙&阿杜"
     },
     {
-        "Cashbox_Id": "74786",
-        "Song_Lang": "台語",
-        "Song_SongName": "關老爺",
-        "Song_Singer": "JV陳政文"
-    },
-    {
-        "Cashbox_Id": "15025",
-        "Song_Lang": "台語",
-        "Song_SongName": "查某囡仔",
-        "Song_Singer": "李千那"
-    },
-    {
-        "Cashbox_Id": "74607",
-        "Song_Lang": "台語",
-        "Song_SongName": "放蕩不羈",
-        "Song_Singer": "草屯囝仔&臭屁嬰仔"
-    },
-    {
         "Cashbox_Id": "77102",
         "Song_Lang": "台語",
         "Song_SongName": "海波浪",
         "Song_Singer": "黃乙玲"
     },
     {
-        "Cashbox_Id": "74845",
-        "Song_Lang": "台語",
-        "Song_SongName": "愛我你會死  2018",
-        "Song_Singer": "草屯囝仔&洋蔥(玖壹壹)"
-    },
-    {
         "Cashbox_Id": "72711",
         "Song_Lang": "台語",
         "Song_SongName": "心花開",
         "Song_Singer": "李千那"
+    },
+    {
+        "Cashbox_Id": "76150",
+        "Song_Lang": "台語",
+        "Song_SongName": "愛情限時批",
+        "Song_Singer": "伍佰&萬芳"
     },
     {
         "Cashbox_Id": "77257",
@@ -204,28 +186,10 @@
         "Song_Singer": "蕭煌奇"
     },
     {
-        "Cashbox_Id": "15015",
+        "Cashbox_Id": "76058",
         "Song_Lang": "台語",
-        "Song_SongName": "鄉下來的",
-        "Song_Singer": "玖壹壹"
-    },
-    {
-        "Cashbox_Id": "76176",
-        "Song_Lang": "台語",
-        "Song_SongName": "愛到無命不知驚",
-        "Song_Singer": "王識賢"
-    },
-    {
-        "Cashbox_Id": "76150",
-        "Song_Lang": "台語",
-        "Song_SongName": "愛情限時批",
-        "Song_Singer": "伍佰&萬芳"
-    },
-    {
-        "Cashbox_Id": "73210",
-        "Song_Lang": "台語",
-        "Song_SongName": "再會中港路",
-        "Song_Singer": "玖壹壹"
+        "Song_SongName": "追追追",
+        "Song_Singer": "黃妃"
     },
     {
         "Cashbox_Id": "75668",
@@ -234,9 +198,45 @@
         "Song_Singer": "施文彬&江蕙"
     },
     {
-        "Cashbox_Id": "76058",
+        "Cashbox_Id": "76675",
         "Song_Lang": "台語",
-        "Song_SongName": "追追追",
-        "Song_Singer": "黃妃"
+        "Song_SongName": "無人熟識",
+        "Song_Singer": "張清芳"
+    },
+    {
+        "Cashbox_Id": "15527",
+        "Song_Lang": "台語",
+        "Song_SongName": "大田後生仔",
+        "Song_Singer": "ㄚ蛋蛋"
+    },
+    {
+        "Cashbox_Id": "15025",
+        "Song_Lang": "台語",
+        "Song_SongName": "查某囡仔",
+        "Song_Singer": "李千那"
+    },
+    {
+        "Cashbox_Id": "74597",
+        "Song_Lang": "台語",
+        "Song_SongName": "長途夜車",
+        "Song_Singer": "滅火器Fire EX."
+    },
+    {
+        "Cashbox_Id": "73367",
+        "Song_Lang": "台語",
+        "Song_SongName": "癡情玫瑰花",
+        "Song_Singer": "Under Lover&玖壹壹"
+    },
+    {
+        "Cashbox_Id": "73640",
+        "Song_Lang": "台語",
+        "Song_SongName": "作陣彼一暝",
+        "Song_Singer": "阿吉仔"
+    },
+    {
+        "Cashbox_Id": "76124",
+        "Song_Lang": "台語",
+        "Song_SongName": "家後",
+        "Song_Singer": "江蕙"
     }
 ]

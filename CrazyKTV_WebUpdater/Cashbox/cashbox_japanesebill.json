@@ -18,22 +18,28 @@
         "Song_Singer": "中島美嘉"
     },
     {
-        "Cashbox_Id": "78159",
-        "Song_Lang": "日語",
-        "Song_SongName": "瞳を閉じて",
-        "Song_Singer": "平井  堅"
-    },
-    {
         "Cashbox_Id": "78433",
         "Song_Lang": "日語",
         "Song_SongName": "淚そうそう",
         "Song_Singer": "夏川里美"
     },
     {
-        "Cashbox_Id": "88690",
+        "Cashbox_Id": "78159",
         "Song_Lang": "日語",
-        "Song_SongName": "つぐない",
-        "Song_Singer": "鄧麗君"
+        "Song_SongName": "瞳を閉じて",
+        "Song_Singer": "平井  堅"
+    },
+    {
+        "Cashbox_Id": "78435",
+        "Song_Lang": "日語",
+        "Song_SongName": "Pen-Pineapple-Apple-Pen(PPAP)",
+        "Song_Singer": "ピコ太郎"
+    },
+    {
+        "Cashbox_Id": "78443",
+        "Song_Lang": "日語",
+        "Song_SongName": "そばにいるね",
+        "Song_Singer": "青山黛瑪&Soulja"
     },
     {
         "Cashbox_Id": "88160",
@@ -54,22 +60,16 @@
         "Song_Singer": "安室奈美惠"
     },
     {
-        "Cashbox_Id": "88898",
+        "Cashbox_Id": "88361",
         "Song_Lang": "日語",
-        "Song_SongName": "ラブ．スト﹣リ﹣は突然に",
-        "Song_Singer": "小田和正"
+        "Song_SongName": "空港",
+        "Song_Singer": "テレサ‧テン"
     },
     {
-        "Cashbox_Id": "78155",
+        "Cashbox_Id": "78106",
         "Song_Lang": "日語",
-        "Song_SongName": "何日君再來",
-        "Song_Singer": "鄧麗君"
-    },
-    {
-        "Cashbox_Id": "78443",
-        "Song_Lang": "日語",
-        "Song_SongName": "そばにいるね",
-        "Song_Singer": "青山黛瑪&Soulja"
+        "Song_SongName": "A.RA.SHI",
+        "Song_Singer": "嵐"
     },
     {
         "Cashbox_Id": "78241",
@@ -78,15 +78,15 @@
         "Song_Singer": "Kiroro"
     },
     {
-        "Cashbox_Id": "89974",
+        "Cashbox_Id": "78441",
         "Song_Lang": "日語",
-        "Song_SongName": "EVERY HEART",
-        "Song_Singer": "寶兒(BOA)"
+        "Song_SongName": "深い森",
+        "Song_Singer": "Do As Infinity(大無限樂團)"
     },
     {
-        "Cashbox_Id": "89679",
+        "Cashbox_Id": "89277",
         "Song_Lang": "日語",
-        "Song_SongName": "SECRET OF MY HEART",
-        "Song_Singer": "倉木麻衣"
+        "Song_SongName": "LA．LA．LA LOVE SONG",
+        "Song_Singer": "久保田利伸"
     }
 ]
