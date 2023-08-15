@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -140,7 +142,7 @@ namespace CrazyKTV_WebUpdater
         {
             var hyperlinks = GetVisuals(flowDocument).OfType<Hyperlink>();
             foreach (var link in hyperlinks)
-                link.RequestNavigate += new System.Windows.Navigation.RequestNavigateEventHandler(link_RequestNavigate);
+                link.RequestNavigate += new System.Windows.Navigation.RequestNavigateEventHandler(Link_RequestNavigate);
         }
 
         public static IEnumerable<DependencyObject> GetVisuals(DependencyObject root)
@@ -153,10 +155,42 @@ namespace CrazyKTV_WebUpdater
             }
         }
 
-        public static void link_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        public static void Link_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
         {
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
+        }
+
+        public static void SetSecurityProtocol()
+        {
+            try
+            { //try TLS 1.3
+                ServicePointManager.SecurityProtocol = (SecurityProtocolType)12288
+                                                     | (SecurityProtocolType)3072
+                                                     | (SecurityProtocolType)768
+                                                     | SecurityProtocolType.Tls;
+            }
+            catch (NotSupportedException)
+            {
+                try
+                { //try TLS 1.2
+                    ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072
+                                                         | (SecurityProtocolType)768
+                                                         | SecurityProtocolType.Tls;
+                }
+                catch (NotSupportedException)
+                {
+                    try
+                    { //try TLS 1.1
+                        ServicePointManager.SecurityProtocol = (SecurityProtocolType)768
+                                                             | SecurityProtocolType.Tls;
+                    }
+                    catch (NotSupportedException)
+                    { //TLS 1.0
+                        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls;
+                    }
+                }
+            }
         }
 
     }

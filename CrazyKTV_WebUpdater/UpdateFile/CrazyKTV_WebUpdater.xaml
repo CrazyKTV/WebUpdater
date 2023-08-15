@@ -15,9 +15,6 @@
 					<Paragraph><Hyperlink NavigateUri="https://www.facebook.com/NewCrazyKTV">參觀 CrazyKTV 首頁</Hyperlink></Paragraph>
 				</TableCell>
 				<TableCell>
-					<Paragraph><Hyperlink NavigateUri="https://sites.google.com/site/crazyktvhelp/">觀看線上使用說明</Hyperlink></Paragraph>
-				</TableCell>
-				<TableCell>
 					<Paragraph><Hyperlink NavigateUri="https://github.com/KenLuoTW/CrazyKTVSongMgr/wiki">觀看加歌程式說明</Hyperlink></Paragraph>
 				</TableCell>
 			</TableRow>
@@ -27,6 +24,15 @@
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="16pt" Foreground = "Brown">如果您無法正常更新, 請將 CrazyKTV 更新程式更新至 v1.0.13 版。</Paragraph>
 	<Paragraph>下載位置: <Hyperlink NavigateUri="https://github.com/CrazyKTV/WebUpdater/raw/master/CrazyKTV_WebUpdater/UpdateFile/CrazyKTV_WebUpdater.exe">CrazyKTV_WebUpdater.exe</Hyperlink></Paragraph>
 	
+	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20230815 更新記錄</Paragraph>
+	<Paragraph FontSize="16pt">CrazyKTV 更新程式更新至 v1.0.14 版, 修復下載更新功能。</Paragraph>
+	<Paragraph>20230815 更新內容:</Paragraph>
+	<List>
+		<ListItem><Paragraph>更新 LAV Filters 至 0.77.2 版。(WinXP 除外)。</Paragraph></ListItem>
+		<ListItem><Paragraph>更新 FFmpeg 至 6.0 版。(WinXP 除外)。</Paragraph></ListItem>
+		<ListItem><Paragraph>【錢櫃資料】更新錢櫃資料至 2023/08/15 (XP)。</Paragraph></ListItem>
+	</List>
+    
 	<Paragraph><LineBreak /></Paragraph><Paragraph FontSize="20pt" Foreground = "blue">20201125 更新記錄</Paragraph>
 	<Paragraph FontSize="16pt">加歌程式更新至 1.4.8.79 版, 修復錢櫃資料截取功能。</Paragraph>
 	<Paragraph>CrazyKTV 加歌程式 v1.4.8.79 更新內容:</Paragraph>

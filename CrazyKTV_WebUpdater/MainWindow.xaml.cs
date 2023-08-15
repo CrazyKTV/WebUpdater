@@ -38,6 +38,17 @@ namespace CrazyKTV_WebUpdater
             if (FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FilePrivatePart > 0) CurVer += "." + FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FilePrivatePart;
             this.Title += CurVer;
 
+            Console.WriteLine(Environment.OSVersion.Version.Major);
+            if (Environment.OSVersion.Version.Major < 6)
+            {
+                
+                if (MessageBox.Show("CrazyKTV 更新程式已不支持您的作業系統版本，請按確定離開。", "CrazyKTV 更新程式", MessageBoxButton.OK, MessageBoxImage.Warning) == MessageBoxResult.OK)
+                {
+                    Environment.Exit(0);
+                }
+            }
+            CommonFunc.SetSecurityProtocol();
+
             using (MemoryStream ms = Download(Global.WebUpdaterLogUrl, false))
             {
                 if (ms.Length > 0)

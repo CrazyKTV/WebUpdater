@@ -172,7 +172,6 @@
     <None Include="UpdateFile\CrazyKTV_WebUpdater.106">
       <SubType>Designer</SubType>
     </None>
-    <None Include="UpdateFile\CrazyKTV_WebUpdater.md" />
     <None Include="UpdateFile\CrazyKTV_WebUpdater.ver">
       <SubType>Designer</SubType>
     </None>
@@ -202,7 +201,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="UpdateFile\CrazyKTV_WebUpdater.css" />
     <None Include="UpdateFile\CassiniDev4-lib.dll" />
     <None Include="UpdateFile\CrazyKTV.exe" />
     <None Include="UpdateFile\CrazyKTVEX.exe" />
@@ -210,19 +208,10 @@
     <None Include="UpdateFile\CrazyKTV_ConfigTool.exe" />
     <None Include="UpdateFile\CrazyKTV_SongMgr.exe" />
     <None Include="UpdateFile\CrazyKTV_WebUpdater.exe" />
-    <None Include="UpdateFile\CrazyKTV_WebUpdater.html" />
     <None Include="UpdateFile\CrazySong.mdb" />
     <None Include="UpdateFile\CrazySongMgr.mdb" />
     <None Include="UpdateFile\DirectShowLib-2005.dll" />
     <None Include="UpdateFile\DotNetZip.dll" />
-    <None Include="UpdateFile\Folder_BackGround.exe" />
-    <None Include="UpdateFile\Folder_BMP.exe" />
-    <None Include="UpdateFile\Folder_Codec.exe" />
-    <None Include="UpdateFile\Folder_Codec_XP.exe" />
-    <None Include="UpdateFile\Folder_Favorite.exe" />
-    <None Include="UpdateFile\Folder_Lang.exe" />
-    <None Include="UpdateFile\Folder_SongMgr.exe" />
-    <None Include="UpdateFile\Folder_Web.exe" />
     <None Include="UpdateFile\MediaFoundation.dll" />
     <None Include="UpdateFile\Newtonsoft.Json.dll" />
     <None Include="UpdateFile\SharpDX.Direct3D9.dll" />
@@ -289,27 +278,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
-    <PublishFile Include="UpdateFile\CrazyKTV_WebUpdater.css">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
     <PublishFile Include="UpdateFile\CrazyKTV_WebUpdater.exe">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="UpdateFile\CrazyKTV_WebUpdater.html">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -340,86 +309,6 @@
       <FileType>File</FileType>
     </PublishFile>
     <PublishFile Include="UpdateFile\DirectShowLib-2005.dll">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="UpdateFile\Folder_BackGround.exe">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="UpdateFile\Folder_BMP.exe">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="UpdateFile\Folder_Codec.exe">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="UpdateFile\Folder_Codec_XP.exe">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="UpdateFile\Folder_Favorite.exe">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="UpdateFile\Folder_Lang.exe">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="UpdateFile\Folder_SongMgr.exe">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Exclude</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>File</FileType>
-    </PublishFile>
-    <PublishFile Include="UpdateFile\Folder_Web.exe">
       <Visible>False</Visible>
       <Group>
       </Group>
